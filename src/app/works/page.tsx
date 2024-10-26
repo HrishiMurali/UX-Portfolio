@@ -1,7 +1,7 @@
 import React from "react";
 
-const Contract = () => {
-  return <div>Contract</div>;
+const Works = () => {
+  return <div>Works</div>;
 };
 
-export default Contract;
+export default Works;

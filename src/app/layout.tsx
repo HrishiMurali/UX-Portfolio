@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import NavigationBar from "./components/navigationBar/navigationBar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,9 +27,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased p-[46px]`}
       >
+        <NavigationBar />
         {children}
+        <div className="flex justify-between items-center bg-[#0D0D0D] rounded-[40px]">
+          <span className="text-[40px]  text-[#C7C7BB]  pt-[44px] pb-[45px] pl-[60px]">
+            Hrishi Murali K
+          </span>
+          <span className="text-[#C7C7BB] text-[24px] pr-[60px]">
+            Hrishimuraliwork321@gmail.com
+          </span>
+        </div>
       </body>
     </html>
   );

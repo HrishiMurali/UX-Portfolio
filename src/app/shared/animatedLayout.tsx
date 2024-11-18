@@ -54,6 +54,10 @@ function RootContent({ children }: { children: React.ReactNode }) {
         <NavigationBar />
       </div>
       <div className="nav-children">{!isLoading && children}</div>
+      <div className="footer flex flex-row justify-between p-10 bg-[#0D0D0D] mt-5 rounded-[40px]">
+        <div>Hrishi Murali K</div>
+        <div>Hrishimuraliwork321@gmail.com</div>
+      </div>
     </>
   );
 }

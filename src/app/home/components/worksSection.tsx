@@ -16,7 +16,7 @@ export const WorksSection = () => {
         <Card
           text={constants.worksOfArt}
           textStyle={"text-[#C7C7BB] text-[40px] work-1-text"}
-          style="bg-[#0D0D0D]  w-full  rounded-[40px] min-h-[70px] flex justify-start items-center pl-[40px] work-1-container"
+          style="bg-[#0D0D0D] w-full rounded-[40px] min-h-[70px] flex justify-start items-center pl-[40px] work-1-container mb-6"
         />
         <div className="flex flex-row overflow-hidden">
           <div className="work-1-img-container bg-[#EFEFEF] flex justify-center items-center w-[50%] min-h-[604px] rounded-tl-[40px] rounded-bl-[40px]">
@@ -52,7 +52,7 @@ export const WorksSection = () => {
           <SummaryCard
             title={constants.smartSchedule}
             content={constants.smartScheduleContent}
-            containerStyle="p-[25px] bg-[#0D0D0D] rounded-tr-[40px] rounded-br-[40px] text-[#C7C7BB] min-h-[350px]  work-2-summary"
+            containerStyle="p-[25px] bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] min-h-[350px]  work-2-summary"
             titleStyle="p-[25px] text-[40px] font-bold work-2-summary-text"
             contentStyle="p-[25px]  text-[32px] work-2-summary-text"
             buttonStyle="work-2-summary-button"
@@ -80,7 +80,7 @@ export const WorksSection = () => {
       </div>
 
       <div className="flex flex-row gap-4 work-section-3 overflow-hidden">
-        <div className="flex flex-col w-[50%]">
+        <div className="flex flex-col w-[50%] gap-4">
           <div className="h-[605px] rounded-[40px] work-4-img-container bg-[#F2F4F7] w-full">
             <Image
               className=" w-full work-4-img"
@@ -92,14 +92,14 @@ export const WorksSection = () => {
           <SummaryCard
             title={constants.portOperation}
             content={constants.portOperationContent}
-            containerStyle="p-[25px] bg-[#0D0D0D] rounded-tr-[40px] rounded-br-[40px] text-[#C7C7BB] min-h-[350px] work-4-summary"
+            containerStyle="p-[25px] bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] min-h-[350px] work-4-summary"
             titleStyle="p-[25px] text-[40px] font-bold work-4-summary-text"
             contentStyle="p-[25px]  text-[32px] work-4-summary-text"
             buttonStyle="work-4-summary-button"
           />
         </div>
 
-        <div className="flex flex-col w-[50%]">
+        <div className="flex flex-col w-[50%] gap-4">
           <div className=" h-[605px] rounded-[40px]  work-5-img-container bg-[#181818] w-full">
             <Image
               className=" w-full work-5-img"

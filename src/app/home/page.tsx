@@ -320,20 +320,12 @@ const Home = () => {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex flex-row gap-4 p-[10px]">
-        <div className="hero-section ">
-          <HeroSection />
-        </div>
-        <div className="experience-section">
-          <ExeperienceSection />
-        </div>
+        <HeroSection />
+        <ExeperienceSection />
       </div>
       <div className="flex flex-row gap-4 justify-between info-expertise">
-        <div className=" info-section w-full">
-          <InfoSection />
-        </div>
-        <div className=" w-full expertise-section">
-          <ExepertiseSection />
-        </div>
+        <InfoSection />
+        <ExepertiseSection />
       </div>
       <WorksSection />
       <ContactSection />

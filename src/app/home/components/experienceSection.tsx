@@ -6,7 +6,7 @@ import experience from "../../../../public/experience.png";
 
 export const ExeperienceSection = () => {
   return (
-    <div className="flex  flex-col gap-4">
+    <div className="flex  flex-col gap-4 experience-section">
       <div className="relative experience-img">
         <div className="absolute left-[50%] top-[35px] translate-x-[-50%] flex justify-center items-center flex-col gap-4">
           <div>

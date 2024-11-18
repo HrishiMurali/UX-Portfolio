@@ -6,12 +6,12 @@ import { constants } from "@/app/shared/constants";
 
 export const HeroSection = () => {
   return (
-    <div className="flex  flex-col min-w-[55vw]  p-[2px] gap-4">
+    <div className="flex  flex-col min-w-[55vw]  p-[2px] gap-4 hero-section justify-between">
       <div className="hero-heading-container">
         <Card
           text={constants.heading1}
           textStyle={"text-[#C7C7BB] text-3xl font-bold hero-heading"}
-          style="bg-[#0D0D0D]  w-full  rounded-[40px] min-h-[70px] flex justify-start items-center pl-[40px] "
+          style="bg-[#0D0D0D]  w-full  rounded-[40px] min-h-[70px] flex justify-start items-center  p-[40px] "
         />
       </div>
       <div className="relative hero-img">

@@ -15,12 +15,12 @@ export const HeroSection = () => {
         />
       </div>
       <div className="relative hero-img">
-        <Image
-          src={resources.homeGif}
-          className="w-full min-h-[560px] bg-[#000000] rounded-[40px]"
-          width={100}
-          height={100}
-          alt="moon"
+        <video
+          src={"/Moonlandscape720.mp4"}
+          className="w-full min-h-[560px] bg-[#000000] rounded-[40px] object-cover"
+          autoPlay
+          muted
+          playsInline
         />
         <Card
           text={constants.heading2}

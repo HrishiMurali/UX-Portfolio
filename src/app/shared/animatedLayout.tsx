@@ -20,10 +20,10 @@ function RootContent({ children }: { children: React.ReactNode }) {
     // Animation sequence
     timeline
       .to(".blank-screen", { opacity: 1, duration: 0.5 })
-      // .to(".intro-text1", { opacity: 1, display: "block", duration: 1 })
-      // .to(".intro-text1", { opacity: 0, display: "none", duration: 0.5 })
-      // .to(".intro-text2", { opacity: 1, display: "block", duration: 1 })
-      // .to(".intro-text2", { opacity: 0, display: "none", duration: 1 })
+      .to(".intro-text1", { opacity: 1, display: "block", duration: 1 })
+      .to(".intro-text1", { opacity: 0, display: "none", duration: 0.5 })
+      .to(".intro-text2", { opacity: 1, display: "block", duration: 1 })
+      .to(".intro-text2", { opacity: 0, display: "none", duration: 1 })
       .to(".nav-text", {
         opacity: 1,
         duration: 1,
@@ -32,7 +32,6 @@ function RootContent({ children }: { children: React.ReactNode }) {
           toggleAnimation(); // Sets shouldShowAnimation to false after the first run
         },
       });
-    // .to(".nav-children", { opacity: 1, duration: 3 });
 
     return () => {
       timeline.kill();

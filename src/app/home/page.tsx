@@ -296,21 +296,10 @@ const Home = () => {
                 ease: "power2",
               }
             );
-            // gsap.fromTo(
-            //   ".contact-button-background",
-            //   { opacity: 0, scaleX: 0, transformOrigin: "center" },
-            //   {
-            //     opacity: 1,
-            //     scaleX: 1,
-            //     delay: 1,
-            //     duration: 0.5,
-            //     ease: "power2",
-            //   }
-            // );
             gsap.fromTo(
               ".contact-button-text",
               { opacity: 0, y: 100 },
-              { opacity: 1, y: 0, delay: 2.5, duration: 1, ease: "power2" }
+              { opacity: 1, y: 0, delay: 1.5, duration: 1, ease: "power2" }
             );
           },
         },

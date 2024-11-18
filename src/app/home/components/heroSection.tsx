@@ -7,12 +7,14 @@ import { constants } from "@/app/shared/constants";
 export const HeroSection = () => {
   return (
     <div className="flex  flex-col min-w-[55vw]  p-[2px] gap-4">
-      <Card
-        text={constants.heading1}
-        textStyle={"text-[#C7C7BB] text-3xl font-bold"}
-        style="bg-[#0D0D0D]  w-full   rounded-[40px] min-h-[70px] flex justify-start items-center pl-[40px]"
-      />
-      <div className="relative">
+      <div className="hero-heading-container">
+        <Card
+          text={constants.heading1}
+          textStyle={"text-[#C7C7BB] text-3xl font-bold hero-heading"}
+          style="bg-[#0D0D0D]  w-full  rounded-[40px] min-h-[70px] flex justify-start items-center pl-[40px] "
+        />
+      </div>
+      <div className="relative hero-img">
         <Image
           src={resources.homeGif}
           className="w-full min-h-[560px] bg-[#000000] rounded-[40px]"

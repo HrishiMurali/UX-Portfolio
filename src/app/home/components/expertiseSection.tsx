@@ -13,11 +13,11 @@ export const ExepertiseSection = () => {
 
   return (
     <div className="bg-[#0D0D0D] p-[25px] text-2xl rounded-[40px]  w-full min-h-[300px]">
-      <span className="text-[#C7C7BB] text-3xl">My Expertise</span>
-      <div className="flex flex-wrap">
+      <div className="text-[#C7C7BB] text-3xl expertise-text">My Expertise</div>
+      <div className="flex flex-wrap expertise-img">
         {iconList.map((icon, index) => (
           <Image
-            className="min-w-[50px] min-h-[50px] rounded-[40px] p-[33px]"
+            className="min-w-[50px] min-h-[50px] rounded-[40px] p-[33px] "
             src={icon}
             alt="experience"
             key={index}

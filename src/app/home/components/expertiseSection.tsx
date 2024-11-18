@@ -12,7 +12,7 @@ export const ExepertiseSection = () => {
   const iconList = [icon1, icon2, icon3, icon4, icon5, icon6, icon7];
 
   return (
-    <div className="bg-[#0D0D0D] p-[25px] text-2xl rounded-[40px]  w-full min-h-[300px] expertise-section">
+    <div className="bg-[#0D0D0D] p-[25px] text-2xl rounded-[40px]  w-full min-h-[300px] expertise-section overflow-hidden">
       <div className="text-[#C7C7BB] text-3xl expertise-text">My Expertise</div>
       <div className="flex flex-wrap expertise-img">
         {iconList.map((icon, index) => (

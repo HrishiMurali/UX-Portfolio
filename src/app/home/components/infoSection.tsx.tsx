@@ -6,7 +6,7 @@ export const InfoSection = () => {
     <Card
       text={constants.shapeExperience}
       textStyle={"text-[#C7C7BB]  text-[48px] w-[517px] info-text"}
-      style="flex justify-start items-end bg-[#0D0D0D] p-[25px] rounded-[40px]  w-full min-h-[500px] pl-[35px] info-section"
+      style="flex justify-start items-end bg-[#0D0D0D] p-[25px] rounded-[40px]  w-full min-h-[500px] pl-[35px] info-section overflow-hidden inset(0 round 40px)"
     />
   );
 };

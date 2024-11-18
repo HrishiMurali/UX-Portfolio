@@ -19,7 +19,7 @@ export const WorksSection = () => {
           style="bg-[#0D0D0D] w-full rounded-[40px] min-h-[70px] flex justify-start items-center pl-[40px] work-1-container mb-6"
         />
         <div className="flex flex-row overflow-hidden">
-          <div className="work-1-img-container bg-[#EFEFEF] flex justify-center items-center w-[50%] min-h-[604px] rounded-tl-[40px] rounded-bl-[40px]">
+          <div className="work-1-img-container bg-[#EFEFEF] flex justify-center items-center w-[50%] min-h-[604px] [clip-path:inset(0_round_40px_0_0_40px)]">
             <Image
               className=" work-1-img w-full "
               alt="phones"
@@ -41,7 +41,7 @@ export const WorksSection = () => {
 
       <div className="flex flex-row gap-4 work-section-2 overflow-hidden">
         <div className="flex flex-col w-[50%] gap-4">
-          <div className="work-2-img-container bg-[#91ACA5] w-full h-[605px] rounded-[40px]  ">
+          <div className="work-2-img-container bg-[#91ACA5] w-full h-[605px] rounded-[40px]  [clip-path:inset(0_round_40px)]">
             <Image
               className=" work-2-img w-full"
               alt="laptop"
@@ -60,7 +60,7 @@ export const WorksSection = () => {
         </div>
 
         <div className="flex flex-col w-[50%] gap-4 overflow-hidden">
-          <div className="work-3-img-container bg-[#020B24]  h-[605px] rounded-[40px]">
+          <div className="work-3-img-container bg-[#020B24]  h-[605px] rounded-[40px] [clip-path:inset(0_round_40px)]">
             <Image
               className=" work-3-img w-full"
               alt="experience"
@@ -81,7 +81,7 @@ export const WorksSection = () => {
 
       <div className="flex flex-row gap-4 work-section-3 overflow-hidden">
         <div className="flex flex-col w-[50%] gap-4">
-          <div className="h-[605px] rounded-[40px] work-4-img-container bg-[#F2F4F7] w-full">
+          <div className="h-[605px] rounded-[40px] work-4-img-container bg-[#F2F4F7] w-full [clip-path:inset(0_round_40px)]">
             <Image
               className=" w-full work-4-img"
               alt="laptop"
@@ -100,7 +100,7 @@ export const WorksSection = () => {
         </div>
 
         <div className="flex flex-col w-[50%] gap-4">
-          <div className=" h-[605px] rounded-[40px]  work-5-img-container bg-[#181818] w-full">
+          <div className=" h-[605px] rounded-[40px]  work-5-img-container bg-[#181818] w-full [clip-path:inset(0_round_40px)]">
             <Image
               className=" w-full work-5-img"
               alt="experience"

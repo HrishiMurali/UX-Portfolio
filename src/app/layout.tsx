@@ -1,7 +1,8 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import NavigationBar from "./components/navigationBar/navigationBar";
+import AnimatedLayout from "./shared/animatedLayout";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,19 +27,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Manrope:wght@200..800&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased p-[46px]`}
       >
-        <NavigationBar />
-        {children}
-        <div className="flex justify-between items-center bg-[#0D0D0D] rounded-[40px]">
-          <span className="text-[40px]  text-[#C7C7BB]  pt-[44px] pb-[45px] pl-[60px]">
-            Hrishi Murali K
-          </span>
-          <span className="text-[#C7C7BB] text-[24px] pr-[60px]">
-            Hrishimuraliwork321@gmail.com
-          </span>
-        </div>
+        <AnimatedLayout>{children}</AnimatedLayout>
       </body>
     </html>
   );

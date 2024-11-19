@@ -8,6 +8,7 @@ interface SummaryCardProps {
   containerStyle: string;
   titleStyle: string;
   contentStyle: string;
+  buttonStyle?: string;
 }
 const SummaryCard = ({
   title,
@@ -15,6 +16,7 @@ const SummaryCard = ({
   containerStyle,
   titleStyle,
   contentStyle,
+  buttonStyle,
 }: SummaryCardProps) => {
   return (
     <div className={containerStyle}>
@@ -23,7 +25,9 @@ const SummaryCard = ({
       </div>
 
       <p className={contentStyle}>{content}</p>
-      <div className="flex flex-row justify-between items-center w-[230px] h-[64px] text-[32px] border-4 border-[#C7C7BB] p-4 rounded-[40px]">
+      <div
+        className={`flex flex-row justify-between items-center w-[230px] h-[64px] text-[32px] border-4 border-[#C7C7BB] p-4 rounded-[40px] ${buttonStyle}`}
+      >
         <button className="h-[64px] w-[230px]">Details</button>
 
         <span className="rotate-90">

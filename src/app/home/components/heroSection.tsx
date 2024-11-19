@@ -1,7 +1,5 @@
 import React from "react";
 import Card from "@/app/components/card/card";
-import Image from "next/image";
-import { resources } from "@/app/shared/resources";
 import { constants } from "@/app/shared/constants";
 
 export const HeroSection = () => {

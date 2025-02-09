@@ -8,9 +8,7 @@ const NavigationBar = () => {
   const router = useRouter();
   const navigationList = [
     { label: "Home", route: "/home" },
-    { label: "About me", route: "/aboutme" },
     { label: "Works", route: "/works" },
-    { label: "Contact", route: "/contact" },
   ];
 
   return (
@@ -21,7 +19,7 @@ const NavigationBar = () => {
           Hrishi Murali K
         </span>
       </div>
-      <div className="flex  flex-row">
+      <div className="flex flex-row pr-4">
         {navigationList.map((option) => {
           const { label, route } = option;
           return (

@@ -36,7 +36,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased p-[46px]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased px-8 xl:px-40 py-5`}
       >
         <AnimatedLayout>{children}</AnimatedLayout>
       </body>

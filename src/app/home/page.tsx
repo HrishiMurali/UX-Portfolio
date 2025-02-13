@@ -15,8 +15,8 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-4">
-      <div className="flex flex-row gap-4 p-[10px]">
+    <div className="flex flex-col gap-4 my-2">
+      <div className="flex gap-4 p-[10px] flex-wrap xl:flex-nowrap">
         <HeroSection />
         <ExeperienceSection />
       </div>

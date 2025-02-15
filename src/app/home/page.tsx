@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <div className="flex flex-col gap-4 my-2">
-      <div className="flex gap-4 flex-wrap xl:flex-nowrap">
+      <div className="flex gap-4 flex-wrap 2xl:flex-nowrap">
         <div className="flex-[6] min-w-[58%]">
           <HeroSection />
         </div>

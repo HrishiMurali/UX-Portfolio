@@ -11,15 +11,14 @@ import carDetail from "../../../../public/Frame 21.png";
 export const WorksSection = () => {
   return (
     <>
-      {/* heading */}
       <div className="work-section-1">
         <Card
           text={constants.worksOfArt}
           textStyle={"text-[#C7C7BB] text-[40px] work-1-text"}
           style="bg-[#0D0D0D] w-full rounded-[40px] min-h-[70px] flex justify-start items-center pl-[40px] work-1-container mb-6"
         />
-        <div className="flex flex-row overflow-hidden">
-          <div className="work-1-img-container bg-[#EFEFEF] flex justify-center items-center w-[50%] min-h-[604px] [clip-path:inset(0_round_40px_0_0_40px)]">
+        <div className="flex flex-col 2xl:flex-row overflow-hidden">
+          <div className="work-1-img-container bg-[#EFEFEF] flex justify-center items-center w-full 2xl:w-[50%] min-h-[604px] rounded-[40px] 2xl:rounded-none  2xl:[clip-path:inset(0_round_40px_0_0_40px)] [clip-path:inset(0_round_40px_40px_40px_40px)]">
             <Image
               className=" work-1-img w-full "
               alt="phones"
@@ -31,16 +30,16 @@ export const WorksSection = () => {
           <SummaryCard
             title={constants.standardAutomobile}
             content={constants.standardAutomobileContent}
-            containerStyle=" w-[50%] p-[25px] bg-[#0D0D0D] rounded-tr-[40px] rounded-br-[40px] text-[#C7C7BB] work-1-summary"
-            titleStyle="p-[25px] text-[40px] font-bold work-1-summary-text"
+            containerStyle=" w-full 2xl:w-[50%] p-[25px] bg-[#0D0D0D] 2xl:rounded-tr-[40px] 2xl:rounded-br-[40px] rounded-[40px]  text-[#C7C7BB] work-1-summary"
+            titleStyle="p-[25px] text-3xl xl:text-[40px] font-bold work-1-summary-text"
             contentStyle="p-[25px]  text-[32px] work-1-summary-text"
             buttonStyle="work-1-summary-button"
           />
         </div>
       </div>
 
-      <div className="flex flex-row gap-4 work-section-2 overflow-hidden">
-        <div className="flex flex-col w-[50%] gap-4">
+      <div className="flex flex-col 2xl:flex-row gap-4 work-section-2 overflow-hidden">
+        <div className="flex flex-col  w-full 2xl:w-[50%] gap-4">
           <div className="work-2-img-container bg-[#91ACA5] w-full h-[605px] rounded-[40px]  [clip-path:inset(0_round_40px)]">
             <Image
               className=" work-2-img w-full"
@@ -59,7 +58,7 @@ export const WorksSection = () => {
           />
         </div>
 
-        <div className="flex flex-col w-[50%] gap-4 overflow-hidden">
+        <div className="flex flex-col w-full 2xl:w-[50%] gap-4 overflow-hidden">
           <div className="work-3-img-container bg-[#020B24]  h-[605px] rounded-[40px] [clip-path:inset(0_round_40px)]">
             <Image
               className=" work-3-img w-full"
@@ -79,8 +78,8 @@ export const WorksSection = () => {
         </div>
       </div>
 
-      <div className="flex flex-row gap-4 work-section-3 overflow-hidden">
-        <div className="flex flex-col w-[50%] gap-4">
+      <div className="flex flex-col 2xl:flex-row gap-4 work-section-3 overflow-hidden">
+        <div className="flex flex-col w-full 2xl:w-[50%] gap-4">
           <div className="h-[605px] rounded-[40px] work-4-img-container bg-[#F2F4F7] w-full [clip-path:inset(0_round_40px)]">
             <Image
               className=" w-full work-4-img"
@@ -99,7 +98,7 @@ export const WorksSection = () => {
           />
         </div>
 
-        <div className="flex flex-col w-[50%] gap-4">
+        <div className="flex flex-col w-full 2xl:w-[50%] gap-4">
           <div className=" h-[605px] rounded-[40px]  work-5-img-container bg-[#181818] w-full [clip-path:inset(0_round_40px)]">
             <Image
               className=" w-full work-5-img"

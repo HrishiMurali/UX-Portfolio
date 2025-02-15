@@ -16,7 +16,12 @@ export const ExepertiseSection = () => {
       <div className="text-[#C7C7BB] text-3xl expertise-text">My Expertise</div>
       <div className="flex flex-wrap expertise-img py-14">
         {iconList.map((icon, index) => (
-          <Image className="p-6 w-36" src={icon} alt="experience" key={index} />
+          <Image
+            className="p-6 w-32 2xl:w-36"
+            src={icon}
+            alt="experience"
+            key={index}
+          />
         ))}
       </div>
     </div>

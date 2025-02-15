@@ -37,6 +37,7 @@ export const homeAnimations = () => {
       scrollTrigger: {
         trigger: ".info-expertise",
         start: "top 90%",
+        once: true,
         onEnter: () => {
           gsap.fromTo(
             ".info-section",
@@ -75,10 +76,12 @@ export const homeAnimations = () => {
     {
       opacity: 1,
       duration: 1,
+
       ease: "power2",
       scrollTrigger: {
         trigger: ".work-section-1",
         start: "top 70%",
+        once: true,
         onEnter: () => {
           // Animation for InfoSection content after loader completes
           gsap.fromTo(
@@ -127,6 +130,7 @@ export const homeAnimations = () => {
       scrollTrigger: {
         trigger: ".work-section-2",
         start: "top 50%",
+        once: true,
         onEnter: () => {
           gsap.fromTo(
             ".work-2-img",
@@ -194,6 +198,7 @@ export const homeAnimations = () => {
       scrollTrigger: {
         trigger: ".work-section-3",
         start: "top 50%",
+        once: true,
         onEnter: () => {
           gsap.fromTo(
             ".work-4-img",
@@ -262,6 +267,7 @@ export const homeAnimations = () => {
       scrollTrigger: {
         trigger: ".contact-section",
         start: "top 99%",
+        once: true,
         onEnter: () => {
           gsap.fromTo(
             ".contact-container",

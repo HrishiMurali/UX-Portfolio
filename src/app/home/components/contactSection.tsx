@@ -5,8 +5,8 @@ import Arrow from "../../../../public/ep--arrow-up-bold.svg";
 export const ContactSection = () => {
   return (
     <div className="bg-[#0D0D0D] flex justify-center items-center h-[600px]  round[40px] gap-4 contact-section contact-container rounded-[40px]">
-      <div className="w-[1459px] flex justify-center items-center flex-col pt-[142px] pb-[242px] pl-[184px] pr-[184px] ">
-        <span className="   text-[#C7C7BB] text-[96px]  text-center pb-[34px]">
+      <div className="w-[1459px] flex justify-center items-center flex-col p-32 ">
+        <span className="  text-[#C7C7BB] text-7xl 2xl:text-8xl  text-center pb-20">
           {constants.masterpieces}
         </span>
 

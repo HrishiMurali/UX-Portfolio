@@ -15,7 +15,7 @@ const NavigationBar = () => {
     <div className="flex justify-between flex-row bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB]  mt-[10px]">
       <div className="flex  flex-row p-[15px]  items-center justify-center gap-4">
         <Image src={user} className="w-[40px] h-[40px]" alt={"user"} />
-        <span className=" nav-text text-[40px] font-bold opacity-0 ">
+        <span className=" nav-text text-[40px] font-bold opacity-0 invisible md:visible">
           Hrishi Murali K
         </span>
       </div>

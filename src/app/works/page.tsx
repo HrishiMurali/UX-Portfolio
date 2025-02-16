@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "@/app/components/card/card";
 import { constants } from "@/app/shared/constants";
 import Image from "next/image";
 import phones from "../../../public/Frame 13.png";

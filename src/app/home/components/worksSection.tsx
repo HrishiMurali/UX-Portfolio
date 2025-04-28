@@ -3,24 +3,29 @@ import Card from "@/app/components/card/card";
 import { constants } from "@/app/shared/constants";
 import Image from "next/image";
 import phones from "../../../../public/Frame 13.png";
-import laptop from "../../../../public/Frame 1.png";
-import bluePhones from "../../../../public/Frame 13 (1).png";
+import laptop from "../../../../public/laptop.png";
+import bluePhones from "../../../../public/iPhone 15 Pro (2) 1.png";
 import SummaryCard from "../../components/summaryCard/SummaryCard";
 import screen from "../../../../public/Frame 18.png";
 import carDetail from "../../../../public/Frame 21.png";
+
+// Import custom CSS
+import "./css/workSection.css";
+
 export const WorksSection = () => {
   return (
     <>
+      {/* First Section */}
       <div className="work-section-1">
         <Card
           text={constants.worksOfArt}
-          textStyle={"text-[#C7C7BB] text-[40px] work-1-text"}
-          style="bg-[#0D0D0D] w-full rounded-[40px] min-h-[70px] flex justify-start items-center pl-[40px] work-1-container mb-6"
+          textStyle="text-[#C7C7BB] text-[40px] work-1-text"
+          style="work-1-container"
         />
-        <div className="flex flex-col 2xl:flex-row overflow-hidden">
-          <div className="work-1-img-container bg-[#EFEFEF] flex justify-center items-center w-full 2xl:w-[50%] min-h-[604px] rounded-[40px] 2xl:rounded-none  2xl:[clip-path:inset(0_round_40px_0_0_40px)] [clip-path:inset(0_round_40px_40px_40px_40px)]">
+        <div className="flex flex-col 2xl:flex-row overflow-hidden h-[600px] 2xl:h-[600px]">
+          <div className="flex-[50%] work-1-img-container">
             <Image
-              className=" work-1-img w-full "
+              className="work-1-img w-full h-full object-cover rounded-[40px]"
               alt="phones"
               color="blue"
               src={phones}
@@ -30,59 +35,64 @@ export const WorksSection = () => {
           <SummaryCard
             title={constants.standardAutomobile}
             content={constants.standardAutomobileContent}
-            containerStyle=" w-full 2xl:w-[50%] p-[25px] bg-[#0D0D0D] 2xl:rounded-tr-[40px] 2xl:rounded-br-[40px] rounded-[40px]  text-[#C7C7BB] work-1-summary"
+            containerStyle="flex-[50%] work-1-summary flex flex-col justify-between"
             titleStyle="p-[25px] text-3xl xl:text-[40px] font-bold work-1-summary-text"
-            contentStyle="p-[25px]  text-[32px] work-1-summary-text"
+            contentStyle="p-[25px] text-[32px] work-1-summary-text"
             buttonStyle="work-1-summary-button"
           />
         </div>
       </div>
 
-      <div className="flex flex-col 2xl:flex-row gap-4 work-section-2 overflow-hidden">
-        <div className="flex flex-col  w-full 2xl:w-[50%] gap-4">
-          <div className="work-2-img-container bg-[#91ACA5] w-full h-[605px] rounded-[40px]  [clip-path:inset(0_round_40px)]">
+      <div className="flex flex-col gap-4 work-section-2 overflow-hidden h-full">
+        {/* Images Row */}
+        <div className="flex flex-row gap-4 w-full">
+          <div className="flex-1 work-2-img-container">
             <Image
-              className=" work-2-img w-full"
+              className="w-full h-full object-cover rounded-[40px]"
               alt="laptop"
               src={laptop}
-              height={605}
             />
           </div>
-          <SummaryCard
-            title={constants.smartSchedule}
-            content={constants.smartScheduleContent}
-            containerStyle="p-[25px] bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] min-h-[350px]  work-2-summary"
-            titleStyle="p-[25px] text-[40px] font-bold work-2-summary-text"
-            contentStyle="p-[25px]  text-[32px] work-2-summary-text"
-            buttonStyle="work-2-summary-button"
-          />
+          <div className="flex-1 work-3-img-container">
+            <Image
+              className="w-full h-full object-cover rounded-[40px]"
+              alt="bluePhones"
+              src={bluePhones}
+            />
+          </div>
         </div>
 
-        <div className="flex flex-col w-full 2xl:w-[50%] gap-4 overflow-hidden">
-          <div className="work-3-img-container bg-[#020B24]  h-[605px] rounded-[40px] [clip-path:inset(0_round_40px)]">
-            <Image
-              className=" work-3-img w-full"
-              alt="experience"
-              src={bluePhones}
-              height={605}
+        {/* Cards Row */}
+        <div className="flex flex-row gap-4 w-full">
+          <div className="flex-1">
+            <SummaryCard
+              title={constants.smartSchedule}
+              content={constants.smartScheduleContent}
+              containerStyle="h-full w-full work-2-summary"
+              titleStyle="text-[40px] font-bold work-2-summary-text"
+              contentStyle="text-[32px] work-2-summary-text"
+              buttonStyle="work-2-summary-button"
             />
           </div>
-          <SummaryCard
-            title={constants.luxuryAutomobile}
-            content={constants.luxuryContent}
-            containerStyle="p-[25px] bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] min-h-[350px] work-3-summary"
-            titleStyle="p-[25px] text-[40px] font-bold work-3-summary-text"
-            contentStyle="p-[25px] text-[32px] work-3-summary-text"
-            buttonStyle="work-3-summary-button"
-          />
+          <div className="flex-1">
+            <SummaryCard
+              title={constants.luxuryAutomobile}
+              content={constants.luxuryContent}
+              containerStyle="h-full w-full work-3-summary"
+              titleStyle="text-[40px] font-bold work-3-summary-text"
+              contentStyle="text-[32px] work-3-summary-text"
+              buttonStyle="work-3-summary-button"
+            />
+          </div>
         </div>
       </div>
 
+      {/* Third Section */}
       <div className="flex flex-col 2xl:flex-row gap-4 work-section-3 overflow-hidden">
         <div className="flex flex-col w-full 2xl:w-[50%] gap-4">
-          <div className="h-[605px] rounded-[40px] work-4-img-container bg-[#F2F4F7] w-full [clip-path:inset(0_round_40px)]">
+          <div className="work-4-img-container">
             <Image
-              className=" w-full work-4-img"
+              className="w-full work-4-img"
               alt="laptop"
               src={screen}
               height={605}
@@ -91,17 +101,17 @@ export const WorksSection = () => {
           <SummaryCard
             title={constants.portOperation}
             content={constants.portOperationContent}
-            containerStyle="p-[25px] bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] min-h-[350px] work-4-summary"
-            titleStyle="p-[25px] text-[40px] font-bold work-4-summary-text"
-            contentStyle="p-[25px]  text-[32px] work-4-summary-text"
+            containerStyle="work-4-summary"
+            titleStyle="text-[40px] font-bold work-4-summary-text"
+            contentStyle="text-[32px] work-4-summary-text"
             buttonStyle="work-4-summary-button"
           />
         </div>
 
         <div className="flex flex-col w-full 2xl:w-[50%] gap-4">
-          <div className=" h-[605px] rounded-[40px]  work-5-img-container bg-[#181818] w-full [clip-path:inset(0_round_40px)]">
+          <div className="work-5-img-container">
             <Image
-              className=" w-full work-5-img"
+              className="w-full work-5-img"
               alt="experience"
               src={carDetail}
               height={605}
@@ -110,9 +120,9 @@ export const WorksSection = () => {
           <SummaryCard
             title={constants.usedCar}
             content={constants.usedCarContent}
-            containerStyle="p-[25px] bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] min-h-[350px] work-5-summary"
-            titleStyle="p-[25px] text-[40px] font-bold work-5-summary-text"
-            contentStyle="p-[25px] text-[32px] work-5-summary-text"
+            containerStyle="work-5-summary"
+            titleStyle="text-[40px] font-bold work-5-summary-text"
+            contentStyle="text-[32px] work-5-summary-text"
             buttonStyle="work-5-summary-button"
           />
         </div>

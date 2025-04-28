@@ -1,0 +1,91 @@
+/* WorksSection.css */
+
+/* Card Section */
+
+.work-1-container {
+  @apply bg-[#0D0D0D] w-full rounded-[40px] min-h-[70px] flex justify-start items-center pl-[40px] mb-6;
+}
+
+.work-1-img-container {
+  @apply bg-[#EFEFEF] flex justify-center items-center w-full 2xl:w-[50%] min-h-[604px] rounded-[40px] 2xl:rounded-none [clip-path:inset(0_round_40px_40px_40px_40px)] 2xl:[clip-path:inset(0_round_40px_0_0_40px)];
+}
+
+.work-1-summary {
+  @apply w-full 2xl:w-[50%] p-[25px] bg-[#0D0D0D] text-[#C7C7BB] 2xl:rounded-tr-[40px] 2xl:rounded-br-[40px];
+}
+
+.work-1-summary-text {
+  @apply text-[#C7C7BB] text-[32px] font-medium;
+}
+
+.work-1-summary-button {
+  @apply text-white bg-[#0D0D0D] rounded-[30px] py-[10px] px-[25px];
+}
+
+/* Section 2 */
+.work-2-img-container {
+  @apply bg-[#91ACA5] w-full h-[605px] rounded-[40px] [clip-path:inset(0_round_40px)] flex justify-center items-center;
+}
+
+.work-2-summary {
+  @apply p-[25px] bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] min-h-[350px];
+}
+
+.work-2-summary-text {
+  @apply text-[#C7C7BB] text-[32px];
+}
+
+.work-2-summary-button {
+  @apply text-white bg-[#0D0D0D] rounded-[30px] py-[10px] px-[25px];
+}
+
+/* Section 3 */
+.work-3-img-container {
+  @apply bg-[#020B24]  rounded-[40px] [clip-path:inset(0_round_40px)] flex justify-center items-center;
+}
+
+.work-3-summary {
+  @apply p-[25px] bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] min-h-[350px];
+}
+
+.work-3-summary-text {
+  @apply text-[#C7C7BB] text-[32px];
+}
+
+.work-3-summary-button {
+  @apply text-white bg-[#0D0D0D] rounded-[30px] py-[10px] px-[25px];
+}
+
+/* Section 4 */
+.work-4-img-container {
+  @apply h-[605px] rounded-[40px] bg-[#F2F4F7] w-full [clip-path:inset(0_round_40px)];
+}
+
+.work-4-summary {
+  @apply p-[25px] bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] min-h-[350px];
+}
+
+.work-4-summary-text {
+  @apply text-[#C7C7BB] text-[32px];
+}
+
+.work-4-summary-button {
+  @apply text-white bg-[#0D0D0D] rounded-[30px] py-[10px] px-[25px];
+}
+
+/* Section 5 */
+.work-5-img-container {
+  @apply h-[605px] rounded-[40px] bg-[#181818] w-full [clip-path:inset(0_round_40px)];
+}
+
+.work-5-summary {
+  @apply bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] min-h-[350px];
+}
+
+.work-5-summary-text {
+  @apply text-[#C7C7BB] text-[32px];
+}
+
+.work-5-summary-button {
+  @apply text-white bg-[#0D0D0D] rounded-[30px] py-[10px] px-[25px];
+}

@@ -1,0 +1,42 @@
+.experience-section {
+  @apply flex flex-col justify-between gap-8 h-full;
+}
+
+.experience-img-container {
+  @apply relative w-full;
+}
+
+.experience-img-text {
+  @apply absolute left-1/2 top-[10%] translate-x-[-50%] flex flex-col justify-center items-center gap-4 w-full;
+}
+
+.experience-years {
+  @apply text-black text-5xl xl:text-6xl font-bold;
+}
+
+.experience-description {
+  @apply text-black text-3xl;
+}
+
+.experience-image {
+  @apply w-full rounded-[40px];
+}
+
+.experience-card-container {
+  @apply h-full flex justify-center items-center;
+}
+
+.experience-card {
+  @apply flex justify-center items-center bg-[#0D0D0D] text-2xl rounded-[40px] w-full h-full;
+}
+
+.experience-card-text {
+  @apply text-[#C7C7BB] text-[12px] md:text-xl 2xl:text-3xl p-6 2xl:p-10;
+}
+
+/* --- Example Media Query (optional) --- */
+@media (min-width: 1536px) {
+  .experience-years {
+    @apply text-7xl;
+  }
+}

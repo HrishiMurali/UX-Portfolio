@@ -1,0 +1,42 @@
+.contact-section {
+  @apply bg-[#0D0D0D] flex justify-center items-center h-[600px] rounded-[40px] gap-4;
+}
+
+.contact-container {
+  @apply w-[1459px] flex justify-center items-center flex-col p-32;
+}
+
+.contact-title {
+  @apply text-[#C7C7BB] text-7xl text-center pb-20;
+}
+
+.contact-buttons {
+  @apply flex flex-row;
+}
+
+.contact-button-background {
+  @apply bg-[#C7C7BB] text-[#0D0D0D] flex flex-row rounded-[40px] w-[274px] h-[76px] justify-between pr-[5px];
+}
+
+.contact-button-text {
+  @apply flex pl-16 w-full font-bold pt-[16px] pb-[16px];
+}
+
+.contact-button-text-inner {
+  @apply text-[32px];
+}
+
+.contact-button-icon {
+  @apply rotate-90 relative p-[18px] flex justify-center items-center bg-[#0D0D0D] border border-[#C7C7BB] text-[#C7C7BB] rounded-full;
+}
+
+.contact-button-arrow {
+  @apply h-[30px] w-[30px];
+}
+
+/* --- Responsive Media Queries --- */
+@media (min-width: 1536px) {
+  .contact-title {
+    @apply text-8xl;
+  }
+}

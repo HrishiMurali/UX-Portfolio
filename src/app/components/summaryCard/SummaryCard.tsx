@@ -19,12 +19,14 @@ const SummaryCard = ({
   buttonStyle,
 }: SummaryCardProps) => {
   return (
-    <div className={containerStyle}>
+    <div
+      className={`p-[20px] flex flex-col justify-between h-full ${containerStyle}`}
+    >
       <div className={titleStyle}>
         <span>{title}</span>
       </div>
 
-      <p className={contentStyle}>{content}</p>
+      <p className={`${contentStyle}`}>{content}</p>
       <div
         className={`flex flex-row justify-between items-center w-[230px] h-[64px] text-[32px] border-4 border-[#C7C7BB] p-4 rounded-[40px] ${buttonStyle}`}
       >

@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { homeAnimations } from "./animations/homeAnimations"; // Import the animations
 
 import { ExperienceSection } from "./components/experienceSection";
-import { ExepertiseSection } from "./components/expertiseSection";
+import { ExpertiseSection } from "./components/expertiseSection";
 import { WorksSection } from "./components/worksSection";
 import { HeroSection } from "./components/heroSection";
 import { ContactSection } from "./components/contactSection";
@@ -15,7 +15,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-4 my-2">
+    <div className="flex flex-col gap-4 my-2 text-left">
       <div className="flex gap-4 flex-wrap 2xl:flex-nowrap">
         <div className="flex-[6] min-w-[58%]">
           <HeroSection />
@@ -27,7 +27,7 @@ const Home = () => {
 
       <div className="flex flex-row gap-4 justify-between info-expertise flex-wrap xl:flex-nowrap">
         <InfoSection />
-        <ExepertiseSection />
+        <ExpertiseSection />
       </div>
       <WorksSection />
       <ContactSection />

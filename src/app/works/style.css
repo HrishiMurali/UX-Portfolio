@@ -1,0 +1,132 @@
+.work-section-1 {
+  @apply flex flex-col overflow-hidden gap-4;
+}
+
+.work-1-img-container {
+  @apply bg-[#EFEFEF] flex justify-center items-center w-full min-h-[604px] rounded-[40px] [clip-path:inset(0_round_40px)];
+}
+
+.work-1-img {
+  @apply w-full;
+}
+
+.work-1-summary {
+  @apply w-full  bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB];
+}
+
+.work-1-summary-text {
+  @apply text-3xl xl:text-[40px] font-bold;
+}
+
+.work-1-summary-button {
+  /* Customize button if needed */
+}
+
+/* -------------------------------------- */
+
+.work-section-2 {
+  @apply flex flex-col gap-4 overflow-hidden;
+}
+
+.work-2-img-container {
+  @apply bg-[#91ACA5] w-full rounded-[40px] [clip-path:inset(0_round_40px)] flex justify-center items-center;
+}
+
+.work-2-img {
+  @apply w-full;
+}
+
+.work-2-summary {
+  @apply bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] min-h-[350px];
+}
+
+.work-2-summary-text {
+  @apply text-[32px];
+}
+
+.work-2-summary-button {
+  /* Customize button if needed */
+}
+
+/* -------------------------------------- */
+
+.work-3-img-container {
+  @apply bg-[#020B24] rounded-[40px] [clip-path:inset(0_round_40px)] flex justify-center items-center;
+}
+
+.work-3-img {
+  @apply w-full;
+}
+
+.work-3-summary {
+  @apply bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] min-h-[350px];
+}
+
+.work-3-summary-text {
+  @apply text-[32px];
+}
+
+.work-3-summary-button {
+  /* Customize button if needed */
+}
+
+/* -------------------------------------- */
+
+.work-section-3 {
+  @apply flex flex-col gap-4 overflow-hidden;
+}
+
+.work-4-img-container {
+  @apply bg-[#F2F4F7] w-full rounded-[40px] [clip-path:inset(0_round_40px)] flex justify-center items-center;
+}
+
+.work-4-img {
+  @apply w-full;
+}
+
+.work-4-summary {
+  @apply bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] min-h-[350px];
+}
+
+.work-4-summary-text {
+  @apply text-[32px];
+}
+
+.work-4-summary-button {
+  /* Customize button if needed */
+}
+
+/* -------------------------------------- */
+
+.work-5-img-container {
+  @apply bg-[#181818] w-full rounded-[40px] [clip-path:inset(0_round_40px)] flex justify-center items-center;
+}
+
+.work-5-img {
+  @apply w-full;
+}
+
+.work-5-summary {
+  @apply bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] min-h-[350px];
+}
+
+.work-5-summary-text {
+  @apply text-[32px];
+}
+
+.work-5-summary-button {
+  /* Customize button if needed */
+}
+
+/* -------------------------------------- */
+
+/* Responsive tweaks if needed */
+@media (min-width: 1536px) {
+  .work-1-summary-text,
+  .work-2-summary-text,
+  .work-3-summary-text,
+  .work-4-summary-text,
+  .work-5-summary-text {
+    @apply text-[40px];
+  }
+}

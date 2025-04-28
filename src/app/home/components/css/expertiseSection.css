@@ -1,0 +1,22 @@
+.expertise-section {
+  @apply bg-[#0D0D0D] p-10 text-2xl rounded-[40px] w-full min-h-[300px] overflow-hidden;
+}
+
+.expertise-title {
+  @apply text-[#C7C7BB] text-3xl;
+}
+
+.expertise-icons {
+  @apply flex flex-wrap py-14;
+}
+
+.expertise-icon {
+  @apply p-6 w-32;
+}
+
+/* --- Responsive Media Queries --- */
+@media (min-width: 1536px) {
+  .expertise-icon {
+    @apply w-36;
+  }
+}

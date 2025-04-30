@@ -3,7 +3,7 @@
 /* Card Section */
 
 .work-1-container {
-  @apply bg-[#0D0D0D] w-full rounded-[40px] min-h-[70px] flex justify-start items-center pl-[40px] mb-6;
+  @apply bg-[#0D0D0D] w-full rounded-[40px] min-h-[70px] flex justify-start items-center   mb-6;
 }
 
 .work-1-img-container {
@@ -23,6 +23,8 @@
 }
 
 /* Section 2 */
+
+
 .work-2-img-container {
   @apply bg-[#91ACA5] w-full h-[605px] rounded-[40px] [clip-path:inset(0_round_40px)] flex justify-center items-center;
 }

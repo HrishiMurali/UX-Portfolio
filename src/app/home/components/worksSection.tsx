@@ -20,7 +20,7 @@ export const WorksSection = () => {
         <Card
           text={constants.worksOfArt}
           textStyle="text-[#C7C7BB] text-[40px] work-1-text"
-          style="work-1-container"
+          style="p-[20px] bg-[#0D0D0D] mb-[15px] rounded-[40px]"
         />
         <div className="flex flex-col 2xl:flex-row overflow-hidden h-[600px] 2xl:h-[600px]">
           <div className="flex-[50%] work-1-img-container">
@@ -36,8 +36,8 @@ export const WorksSection = () => {
             title={constants.standardAutomobile}
             content={constants.standardAutomobileContent}
             containerStyle="flex-[50%] work-1-summary flex flex-col justify-between"
-            titleStyle="p-[25px] text-3xl xl:text-[40px] font-bold work-1-summary-text"
-            contentStyle="p-[25px] text-[32px] work-1-summary-text"
+            titleStyle="p-[2px] text-3xl xl:text-[40px] font-bold work-1-summary-text"
+            contentStyle="p-[2px] text-[32px] work-1-summary-text"
             buttonStyle="work-1-summary-button"
           />
         </div>
@@ -48,14 +48,14 @@ export const WorksSection = () => {
         <div className="flex flex-row gap-4 w-full">
           <div className="flex-1 work-2-img-container">
             <Image
-              className="w-full h-full object-cover rounded-[40px]"
+              className="w-full h-[60%] object-cover "
               alt="laptop"
               src={laptop}
             />
           </div>
           <div className="flex-1 work-3-img-container">
             <Image
-              className="w-full h-full object-cover rounded-[40px]"
+              className="w-full h-[80%] object-cover "
               alt="bluePhones"
               src={bluePhones}
             />
@@ -88,43 +88,49 @@ export const WorksSection = () => {
       </div>
 
       {/* Third Section */}
-      <div className="flex flex-col 2xl:flex-row gap-4 work-section-3 overflow-hidden">
-        <div className="flex flex-col w-full 2xl:w-[50%] gap-4">
-          <div className="work-4-img-container">
+      <div className="flex flex-col gap-4 work-section-3 overflow-hidden h-full">
+        {/* Images Row */}
+        <div className="flex flex-row gap-4 w-full">
+          <div className="flex flex-1 work-4-img-container items-center">
             <Image
-              className="w-full work-4-img"
+              className="w-full h-[80%] object-cover work-4-img "
               alt="laptop"
               src={screen}
               height={605}
             />
           </div>
-          <SummaryCard
-            title={constants.portOperation}
-            content={constants.portOperationContent}
-            containerStyle="work-4-summary"
-            titleStyle="text-[40px] font-bold work-4-summary-text"
-            contentStyle="text-[32px] work-4-summary-text"
-            buttonStyle="work-4-summary-button"
-          />
-        </div>
-
-        <div className="flex flex-col w-full 2xl:w-[50%] gap-4">
-          <div className="work-5-img-container">
+          <div className="flex flex-1 work-5-img-container items-center">
             <Image
-              className="w-full work-5-img"
+              className="w-full  h-[80%]  object-cover work-5-img "
               alt="experience"
               src={carDetail}
               height={605}
             />
           </div>
-          <SummaryCard
-            title={constants.usedCar}
-            content={constants.usedCarContent}
-            containerStyle="work-5-summary"
-            titleStyle="text-[40px] font-bold work-5-summary-text"
-            contentStyle="text-[32px] work-5-summary-text"
-            buttonStyle="work-5-summary-button"
-          />
+        </div>
+
+        {/* Cards Row */}
+        <div className="flex flex-row gap-4 w-full">
+          <div className="flex-1">
+            <SummaryCard
+              title={constants.portOperation}
+              content={constants.portOperationContent}
+              containerStyle="h-full w-full work-4-summary"
+              titleStyle="text-[40px] font-bold work-4-summary-text"
+              contentStyle="text-[32px] work-4-summary-text"
+              buttonStyle="work-4-summary-button"
+            />
+          </div>
+          <div className="flex-1">
+            <SummaryCard
+              title={constants.usedCar}
+              content={constants.usedCarContent}
+              containerStyle="h-full w-full work-5-summary"
+              titleStyle="text-[40px] font-bold work-5-summary-text"
+              contentStyle="text-[32px] work-5-summary-text"
+              buttonStyle="work-5-summary-button"
+            />
+          </div>
         </div>
       </div>
     </>

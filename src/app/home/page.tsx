@@ -26,8 +26,12 @@ const Home = () => {
       </div>
 
       <div className="flex flex-row gap-4 justify-between info-expertise flex-wrap xl:flex-nowrap">
-        <InfoSection />
-        <ExpertiseSection />
+        <div className="flex flex-[50%]">
+          <InfoSection />
+        </div>
+        <div className="flex flex-[50%]">
+          <ExpertiseSection />
+        </div>
       </div>
       <WorksSection />
       <ContactSection />

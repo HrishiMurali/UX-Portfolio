@@ -1,5 +1,5 @@
 .expertise-section {
-  @apply bg-[#0D0D0D] p-10 text-2xl rounded-[40px] w-full min-h-[300px] overflow-hidden;
+  @apply bg-[#0D0D0D] p-10 text-2xl rounded-[40px] w-full h-[540px] overflow-hidden;
 }
 
 .expertise-title {
@@ -17,6 +17,6 @@
 /* --- Responsive Media Queries --- */
 @media (min-width: 1536px) {
   .expertise-icon {
-    @apply w-36;
+    @apply w-32;
   }
 }

@@ -48,14 +48,14 @@ export const WorksSection = () => {
         <div className="flex flex-row gap-4 w-full">
           <div className="flex-1 work-2-img-container">
             <Image
-              className="w-full h-[60%] object-cover "
+              className="w-full object-cover  work-2-img"
               alt="laptop"
               src={laptop}
             />
           </div>
           <div className="flex-1 work-3-img-container">
             <Image
-              className="w-full h-[80%] object-cover "
+              className="w-full h-[80%] object-cover work-3-img"
               alt="bluePhones"
               src={bluePhones}
             />

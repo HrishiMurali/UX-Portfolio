@@ -14,7 +14,7 @@ export const HeroSection = () => {
         />
       </div>
 
-      <div className="hero-video-container">
+      <div className="hero-video-container hero-img">
         <video
           src="/Moonlandscape720.mp4"
           className="hero-video"

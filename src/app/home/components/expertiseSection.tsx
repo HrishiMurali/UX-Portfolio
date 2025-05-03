@@ -14,8 +14,8 @@ export const ExpertiseSection = () => {
 
   return (
     <div className="expertise-section">
-      <div className="expertise-title">My Expertise</div>
-      <div className="expertise-icons">
+      <div className="expertise expertise-title">My Expertise</div>
+      <div className="expertise expertise-icons">
         {iconList.map((icon, index) => (
           <Image
             className="expertise-icon"

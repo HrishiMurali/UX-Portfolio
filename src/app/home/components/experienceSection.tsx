@@ -8,7 +8,7 @@ import "./css/experienceSection.css"; // Import the styles!
 export const ExperienceSection = () => {
   return (
     <div className="experience-section">
-      <div className="experience-img-container">
+      <div className="experience-img experience-img-container">
         <div className="experience-img-text">
           <div>
             <span className="experience-years">{constants.years}</span>
@@ -19,7 +19,7 @@ export const ExperienceSection = () => {
         </div>
         <Image className="experience-image" src={experience} alt="experience" />
       </div>
-      <div className="experience-card-container">
+      <div className="experience-card-container experience-img">
         <Card
           text={constants.description}
           textStyle="experience-card-text"

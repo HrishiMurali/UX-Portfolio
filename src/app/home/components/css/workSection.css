@@ -43,10 +43,23 @@
 
 /* === Responsive (Mobile) Overrides === */
 
-
-
+.work-pair {
+  @apply flex flex-row gap-4 w-full;
+}
+.visible-in-desktop {
+  @apply block;
+}
+.visible-in-mobile {
+  @apply hidden;
+}
 
 @media (max-width: 860px) {
+  .visible-in-desktop {
+    @apply hidden;
+  }
+  .visible-in-mobile {
+    @apply block;
+  }
   .work-1-text{
     @apply text-[16px]
   }
@@ -79,6 +92,9 @@
   }
   .work-1-summary-button{
     @apply text-[14px] border-none justify-start w-[178px] ml-[-45px]
+  }
+  .work-pair {
+    @apply flex-col mt-[16px];
   }
 
 }
@@ -130,7 +146,7 @@
 
 .work-2-img,
 .work-3-img {
-  @apply w-full h-full object-cover rounded-[40px];
+  @apply  object-cover rounded-[40px];
 }
 
 .work-3-img {
@@ -189,9 +205,12 @@
   .work-3-summary-text {
     @apply text-[14px];
   }
-  .work-2-summary-button,
-.work-3-summary-button {
+  .work-2-summary-button
+{
   @apply text-[14px] border-none justify-start w-[178px] ml-[-45px]
+}
+.work-3-summary-button {
+  @apply text-[14px] border-none justify-start w-[120px] ml-[-16px]
 }
 }
 
@@ -240,7 +259,9 @@
 .work-5-summary-button {
   @apply text-[#C7C7BB] bg-[#0D0D0D] rounded-[30px] py-[10px] px-[25px];
 }
-
+.work-section-5-cards {
+  @apply flex flex-row gap-4 w-full;;
+}
 /* === Mobile Overrides === */
 
 @media (max-width: 860px) {

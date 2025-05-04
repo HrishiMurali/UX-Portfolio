@@ -5,7 +5,7 @@
 }
 
 .user-section {
-  @apply flex items-center justify-center flex-row p-[15px] gap-4 w-full;
+  @apply flex justify-between flex-row p-[15px] gap-4 w-full;
 }
 
 .user-image {
@@ -31,10 +31,13 @@
 .menu-wrapper {
   @apply flex justify-center items-center;
 }
-
+.image-name-wrapper {
+  @apply flex justify-center items-center gap-2;
+}
 /* ↓ Mobile overrides ↓ */
 
 @media (max-width: 860px) {
+ 
   .nav-container {
     @apply h-[56px] text-[16px];
   }
@@ -58,4 +61,6 @@
   .nav-items {
     @apply hidden;
   }
+
+  
 }

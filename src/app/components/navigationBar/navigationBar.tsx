@@ -16,7 +16,7 @@ const NavigationBar = () => {
   return (
     <div className="nav-container">
       <div className="user-section">
-        <div>
+        <div className="image-name-wrapper">
           <Image src={user} className="user-image" alt="user" />
           <span className="user-name">Hrishi Murali K</span>
         </div>

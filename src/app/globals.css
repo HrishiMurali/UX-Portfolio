@@ -34,4 +34,5 @@ body {
 
 body{
   max-width: 1882px;
+  min-width:375px
 }

@@ -36,6 +36,14 @@
 
 /* --- Example Media Query (optional) --- */
 
+@media (max-width: 500px) {
+  .experience-years,.experience-description{
+    @apply text-[32px]
+  }
+  .experience-description{
+       @apply mt-[-10px]
+  }
+}
 @media (max-width: 860px) {
   .experience-card-text{
     @apply text-[16px]

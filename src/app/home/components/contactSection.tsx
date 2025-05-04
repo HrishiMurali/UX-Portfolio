@@ -10,11 +10,12 @@ export const ContactSection = () => {
         <span className="contact-title">{constants.masterpieces}</span>
 
         <div className="contact-buttons">
-          <div className="contact-button-background">
+          <div className="contact-button-background w-[50px] md:w-[274px]">
             <div className="contact-button-text">
-              <div className="contact-button-text-inner">Chat</div>
+              <div className="text-black contact-button-text-inner">Chat</div>
             </div>
           </div>
+
           <div className="contact-button-icon">
             <Arrow className="contact-button-arrow" />
           </div>

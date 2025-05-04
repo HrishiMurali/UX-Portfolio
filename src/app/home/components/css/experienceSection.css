@@ -35,8 +35,15 @@
 }
 
 /* --- Example Media Query (optional) --- */
+
+@media (max-width: 860px) {
+  .experience-card-text{
+    @apply text-[16px]
+  }
+}
 @media (min-width: 1536px) {
   .experience-years {
     @apply text-7xl;
   }
 }
+

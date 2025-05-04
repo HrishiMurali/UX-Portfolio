@@ -15,8 +15,27 @@
 }
 
 /* --- Responsive Media Queries --- */
+
+@media (max-width: 860px) {
+  .expertise-section{
+    @apply p-[20px] 
+  }
+  .expertise-title{
+    @apply text-[16px]
+  }
+  .expertise-icon{
+    @apply p-[5px] w-[64px] h-full
+  }
+  .expertise-section {
+    @apply h-[214px] h-full 
+  }
+  .expertise-icons {
+    @apply p-[20px] pl-[12px]
+  }
+ 
+}
 @media (min-width: 1536px) {
   .expertise-icon {
-    @apply w-32;
+    @apply w-32  
   }
 }

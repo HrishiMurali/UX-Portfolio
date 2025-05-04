@@ -8,8 +8,17 @@
 }
 
 /* --- Responsive adjustments if needed (example) --- */
+
+@media (max-width: 860px) {
+  .info-text {
+    @apply text-[16px] h-[15px];
+  }
+  .info-section {
+    @apply h-[56px]  flex justify-start pl-[22px]
+  }
+}
 @media (min-width: 1536px) {
   .info-text {
-    @apply text-[46px];
+    @apply text-[46px] ;
   }
 }

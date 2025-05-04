@@ -3,7 +3,7 @@
 }
 
 .contact-container {
-  @apply w-[1459px] flex justify-center items-center flex-col p-32;
+  @apply  flex justify-center items-center flex-col p-32;
 }
 
 .contact-title {
@@ -14,9 +14,7 @@
   @apply flex flex-row;
 }
 
-.contact-button-background {
-  @apply bg-[#C7C7BB] text-[#0D0D0D] flex flex-row rounded-[40px] w-[274px] h-[76px] justify-between pr-[5px];
-}
+
 
 .contact-button-text {
   @apply flex pl-16 w-full font-bold pt-[16px] pb-[16px];
@@ -33,10 +31,58 @@
 .contact-button-arrow {
   @apply h-[30px] w-[30px];
 }
+.contact-button-background {
+  @apply  bg-[#C7C7BB] text-[#0D0D0D] flex flex-row rounded-[40px] h-[76px] justify-between pr-[5px];
+}
+
 
 /* --- Responsive Media Queries --- */
+
+
+@media (max-width: 860px) {
+  .contact-section {
+    @apply h-[106px];
+  }
+
+  .contact-container {
+    @apply pt-[24px] pr-[56px] pl-[56px] p-0; /* overrides the p-32 default */
+  }
+
+  .contact-title {
+    @apply text-[16px] pb-0; /* reduces title size and removes padding bottom */
+  }
+
+  .contact-buttons {
+    @apply flex flex-row mt-[10px];
+  }
+
+  .contact-button-background {
+    @apply w-[50px] h-[15px] flex flex-row rounded-[40px] justify-between pr-[2px];
+  }
+
+  .contact-button-text {
+    @apply pl-[6px] pt-0 pb-0 items-center;
+  }
+
+  .contact-button-text-inner {
+    @apply text-[8px];
+  }
+
+  .contact-button-icon {
+    @apply p-0 w-[12px] h-[12px] flex justify-center items-center bg-[#0D0D0D] border border-[#C7C7BB] text-[#C7C7BB] rounded-full left-[-20px] top-[2px];
+  }
+
+  .contact-button-arrow {
+    @apply h-[6px] w-[6px];
+  }
+.contact-button-background{
+  width: 50px !important;
+}
+  
+}
 @media (min-width: 1536px) {
   .contact-title {
     @apply text-8xl;
   }
+
 }

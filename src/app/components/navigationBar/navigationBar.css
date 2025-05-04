@@ -1,0 +1,66 @@
+/* Default: Desktop styles */
+
+.nav-container {
+  @apply flex justify-between flex-row bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] mt-[10px];
+}
+
+.user-section {
+  @apply flex justify-between flex-row p-[15px] gap-4 w-full;
+}
+
+.user-image {
+  @apply w-[40px] h-[40px] visible;
+}
+
+.user-name {
+  @apply text-[40px] font-bold;
+}
+
+.menu-image {
+  @apply hidden;
+}
+
+.nav-items {
+  @apply flex flex-row pr-4;
+}
+
+.nav-item {
+  @apply cursor-pointer pl-[15px] pr-[15px] flex items-center justify-center text-[24px];
+}
+
+.menu-wrapper {
+  @apply flex justify-center items-center;
+}
+.image-name-wrapper {
+  @apply flex justify-center items-center gap-2;
+}
+/* ↓ Mobile overrides ↓ */
+
+@media (max-width: 860px) {
+ 
+  .nav-container {
+    @apply h-[56px] text-[16px];
+  }
+
+  .user-section {
+    @apply justify-between p-[19px];
+  }
+
+  .user-image {
+    @apply hidden;
+  }
+
+  .user-name {
+    @apply text-[16px]; /* Fixed the typo from text-[pl-16] */
+  }
+
+  .menu-image {
+    @apply block w-[24px] h-[24px];
+  }
+
+  .nav-items {
+    @apply hidden;
+  }
+
+  
+}

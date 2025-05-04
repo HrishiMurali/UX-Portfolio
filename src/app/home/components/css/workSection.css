@@ -2,25 +2,103 @@
 
 /* Card Section */
 
-.work-1-container {
-  @apply bg-[#0D0D0D] w-full rounded-[40px] min-h-[70px] flex justify-start items-center   mb-6;
+/* === Base (Desktop) Styles === */
+
+.work-1-text {
+  @apply text-[#C7C7BB] text-[40px];
+}
+
+.work-1-card {
+  @apply p-[20px] bg-[#0D0D0D] mb-[15px] rounded-[40px];
+}
+
+.work-1-wrapper {
+  @apply flex flex-row overflow-hidden h-[600px];
 }
 
 .work-1-img-container {
-  @apply bg-[#EFEFEF] flex justify-center items-center w-full 2xl:w-[50%] min-h-[604px] rounded-[40px] 2xl:rounded-none [clip-path:inset(0_round_40px_40px_40px_40px)] 2xl:[clip-path:inset(0_round_40px_0_0_40px)];
+  @apply flex-[50%];
+}
+
+.work-1-img {
+  @apply w-full h-full object-cover rounded-[40px];
 }
 
 .work-1-summary {
-  @apply w-full 2xl:w-[50%] p-[25px] bg-[#0D0D0D] text-[#C7C7BB] 2xl:rounded-tr-[40px] 2xl:rounded-br-[40px];
+  @apply flex-[50%] flex flex-col justify-between;
+}
+
+.work-1-summary-title {
+  @apply p-[2px] text-[40px] font-bold;
 }
 
 .work-1-summary-text {
-  @apply text-[#C7C7BB] text-[32px] font-medium;
+  @apply p-[2px] text-[32px];
 }
 
+/* Add styles for button if needed */
 .work-1-summary-button {
-  @apply text-white bg-[#0D0D0D] rounded-[30px] py-[10px] px-[25px];
+  /* Example: @apply mt-4 bg-blue-500 text-white rounded-lg px-4 py-2; */
 }
+
+/* === Responsive (Mobile) Overrides === */
+
+.work-pair {
+  @apply flex flex-row gap-4 w-full;
+}
+.visible-in-desktop {
+  @apply block;
+}
+.visible-in-mobile {
+  @apply hidden;
+}
+
+@media (max-width: 860px) {
+  .visible-in-desktop {
+    @apply hidden;
+  }
+  .visible-in-mobile {
+    @apply block;
+  }
+  .work-1-text{
+    @apply text-[16px]
+  }
+  .work-1-summary-text{
+    @apply text-[14px] 
+  }
+  .work-1-summary{
+    @apply h-[191px]
+  }
+  .workOneWrapper{
+    @apply h-[191px]
+  }
+  .work-1-wrapper {
+    @apply flex-col h-auto;
+  }
+
+  .work-1-img-container {
+    @apply h-[300px] w-full overflow-hidden;
+  }
+
+  .work-1-img {
+    @apply  object-cover rounded-[40px];
+  }
+
+  .work-1-summary {
+    @apply w-full mt-[16px];
+  }
+  .work-1-summary-title{
+    @apply text-[16px] text-[#C7C7BB]
+  }
+  .work-1-summary-button{
+    @apply text-[14px] border-none justify-start w-[178px] ml-[-45px]
+  }
+  .work-pair {
+    @apply flex-col mt-[16px];
+  }
+
+}
+
 
 /* Section 2 */
 
@@ -42,52 +120,185 @@
 }
 
 /* Section 3 */
+/* === BASE (Desktop) === */
+
+.work-section-2 {
+  @apply flex flex-col gap-4 overflow-hidden h-full;
+}
+
+.work-section-2-images,
+.work-section-2-cards {
+  @apply flex flex-row gap-4 w-full;
+}
+
+.work-2-img-container,
 .work-3-img-container {
-  @apply bg-[#020B24]  rounded-[40px] [clip-path:inset(0_round_40px)] flex justify-center items-center;
+  @apply flex-1 h-[605px] rounded-[40px] flex justify-center items-center overflow-hidden;
 }
 
+.work-2-img-container {
+  @apply bg-[#91ACA5];
+}
+
+.work-3-img-container {
+  @apply bg-[#0D0D0D];
+}
+
+.work-2-img,
+.work-3-img {
+  @apply  object-cover rounded-[40px];
+}
+
+.work-3-img {
+  @apply h-[80%];
+}
+
+.work-2-summary-wrapper,
+.work-3-summary-wrapper {
+  @apply flex-1;
+}
+
+.work-2-summary,
 .work-3-summary {
-  @apply p-[25px] bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] min-h-[350px];
+  @apply h-full w-full p-[25px] bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] min-h-[350px];
 }
 
+.work-2-summary-title,
+.work-3-summary-title {
+  @apply text-[40px] font-bold;
+}
+
+.work-2-summary-text,
 .work-3-summary-text {
   @apply text-[#C7C7BB] text-[32px];
 }
 
+.work-2-summary-button,
 .work-3-summary-button {
-  @apply text-white bg-[#0D0D0D] rounded-[30px] py-[10px] px-[25px];
+  @apply text-[#C7C7BB] bg-[#0D0D0D] rounded-[30px] py-[10px] px-[25px];
 }
 
-/* Section 4 */
+/* === RESPONSIVE (Mobile-first overrides) === */
+
+@media (max-width: 860px) {
+  .work-section-2-images,
+  .work-section-2-cards {
+    @apply flex-col;
+  }
+
+  .work-2-img-container,
+  .work-3-img-container {
+    @apply h-[300px];
+  }
+
+  .work-2-summary,
+  .work-3-summary {
+    @apply min-h-[211px];
+  }
+
+  .work-2-summary-title,
+  .work-3-summary-title {
+    @apply text-[16px];
+  }
+
+  .work-2-summary-text,
+  .work-3-summary-text {
+    @apply text-[14px];
+  }
+  .work-2-summary-button
+{
+  @apply text-[14px] border-none justify-start w-[178px] ml-[-45px]
+}
+.work-3-summary-button {
+  @apply text-[14px] border-none justify-start w-[120px] ml-[-16px]
+}
+}
+
+
+/* === Desktop-first layout === */
+
+.work-section-4 {
+  @apply flex flex-col gap-4 overflow-hidden h-full;
+}
+
+.work-section-4-images {
+  @apply flex flex-row gap-4 w-full;
+}
+
+.work-4-img-container,
+.work-5-img-container {
+  @apply flex flex-1 items-center h-[605px] rounded-[40px] w-full overflow-hidden;
+}
+
 .work-4-img-container {
-  @apply h-[605px] rounded-[40px] bg-[#F2F4F7] w-full [clip-path:inset(0_round_40px)];
+  @apply bg-[#F2F4F7] [clip-path:inset(0_round_40px)];
 }
 
-.work-4-summary {
+.work-5-img-container {
+  @apply bg-[#181818] [clip-path:inset(0_round_40px)];
+}
+
+.work-4-img,
+.work-5-img {
+  @apply w-full h-[80%] object-cover;
+}
+
+/* === Summary Card styles (Desktop) === */
+
+.work-4-summary,
+.work-5-summary {
   @apply p-[25px] bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] min-h-[350px];
 }
 
-.work-4-summary-text {
-  @apply text-[#C7C7BB] text-[32px];
-}
-
-.work-4-summary-button {
-  @apply text-white bg-[#0D0D0D] rounded-[30px] py-[10px] px-[25px];
-}
-
-/* Section 5 */
-.work-5-img-container {
-  @apply h-[605px] rounded-[40px] bg-[#181818] w-full [clip-path:inset(0_round_40px)];
-}
-
-.work-5-summary {
-  @apply bg-[#0D0D0D] rounded-[40px] text-[#C7C7BB] min-h-[350px];
-}
-
+.work-4-summary-text,
 .work-5-summary-text {
   @apply text-[#C7C7BB] text-[32px];
 }
 
+.work-4-summary-button,
 .work-5-summary-button {
-  @apply text-white bg-[#0D0D0D] rounded-[30px] py-[10px] px-[25px];
+  @apply text-[#C7C7BB] bg-[#0D0D0D] rounded-[30px] py-[10px] px-[25px];
 }
+.work-section-5-cards {
+  @apply flex flex-row gap-4 w-full;;
+}
+/* === Mobile Overrides === */
+
+@media (max-width: 860px) {
+  .work-section-5-cards {
+    @apply flex flex-col gap-4 w-full;;
+  }
+  .work-section-4-images {
+    @apply flex-col;
+  }
+
+  .work-4-img-container,
+  .work-5-img-container {
+    @apply h-[211px]
+  }
+
+
+
+  .work-4-summary,
+  .work-5-summary {
+    @apply min-h-[211px];
+  }
+
+  .work-4-summary-text,
+  .work-5-summary-text {
+    @apply text-[14px];
+  }
+
+  .work-4-summary-title,
+  .work-5-summary-title {
+    @apply text-[16px];
+  }
+
+
+  .work-4-summary-button,
+.work-5-summary-button {
+  @apply text-[14px] border-none justify-start w-[178px] ml-[-45px]
+}
+}
+
+

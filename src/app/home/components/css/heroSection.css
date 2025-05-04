@@ -1,3 +1,5 @@
+/* === Desktop-first base styles === */
+
 .hero-section {
   @apply flex flex-col p-[2px] gap-4 justify-between h-full;
 }
@@ -7,11 +9,11 @@
 }
 
 .hero-heading-card {
-  @apply bg-[#0D0D0D] w-full rounded-[40px] min-h-[70px] flex justify-start items-center p-9 text-[#C7C7BB] text-3xl font-bold;
+  @apply bg-[#0D0D0D] w-full rounded-[40px]  flex justify-start items-center p-9 text-[#C7C7BB] text-3xl font-bold;
 }
 
 .hero-video-container {
-  @apply relative h-full;
+  @apply relative h-full ;
 }
 
 .hero-video {
@@ -19,16 +21,37 @@
 }
 
 .hero-subheading-card {
-  @apply absolute left-[50%] bottom-[30px] translate-x-[-50%] bg-[#0D0D0D] w-5/6 rounded-[40px] min-h-[100px] flex justify-center items-center p-9;
+  @apply absolute left-[50%] bottom-[30px] translate-x-[-50%] bg-[#0D0D0D] w-5/6 rounded-[20px]  flex justify-start items-center p-9 w-[97%] pl-[10px];
 }
 
 .hero-subheading {
-  @apply text-[#C7C7BB] text-3xl 2xl:text-4xl font-bold;
+  @apply text-[#C7C7BB] text-4xl font-bold;
 }
 
-/* --- Responsive if needed (example) --- */
-@media (min-width: 1536px) {
+/* === Mobile overrides (max-width) === */
+
+
+
+@media (max-width: 860px) {
+  .hero-heading-container{
+    @apply h-[56px]
+  }
+
+  .hero-heading{
+    @apply text-[16px]
+  }
+  .hero-heading-card {
+    @apply p-[19px] leading-[18px] 
+  }
+
   .hero-subheading {
-    @apply text-4xl;
+      @apply text-[16px]
+  }
+  
+  .hero-subheading-card{
+    @apply  h-[49px]
+  }
+  .hero-video-container{
+    @apply h-[300px] 
   }
 }

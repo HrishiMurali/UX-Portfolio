@@ -20,7 +20,7 @@ export const constants = {
   portOperation: "Port operation software",
   portOperationContent:
     "Software that streamlines marine logistics and enhances overall efficiency in port management.",
-  usedCar: "Used Cars Dealership Website",
+  usedCar: "Auto Marketplace",
   usedCarContent:
     "Website which focus on ease and efficiency of buying and selling used cars.",
 };

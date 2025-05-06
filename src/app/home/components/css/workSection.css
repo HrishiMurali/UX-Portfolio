@@ -262,6 +262,11 @@
 .work-section-5-cards {
   @apply flex flex-row gap-4 w-full;;
 }
+.work-4-summary-title,
+.work-5-summary-title {
+  @apply text-[40px] font-bold;
+}
+
 /* === Mobile Overrides === */
 
 @media (max-width: 860px) {

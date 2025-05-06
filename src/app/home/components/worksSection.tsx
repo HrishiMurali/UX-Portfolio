@@ -107,7 +107,7 @@ export const WorksSection = () => {
                   title={constants.portOperation}
                   content={constants.portOperationContent}
                   containerStyle="work-4-summary"
-                  titleStyle="work-4-summary-text"
+                  titleStyle="work-4-summary-title"
                   contentStyle="work-4-summary-text"
                   buttonStyle="work-4-summary-button"
                 />
@@ -117,7 +117,7 @@ export const WorksSection = () => {
                   title={constants.usedCar}
                   content={constants.usedCarContent}
                   containerStyle="work-5-summary"
-                  titleStyle="work-5-summary-text"
+                  titleStyle="work-5-summary-title"
                   contentStyle="work-5-summary-text"
                   buttonStyle="work-5-summary-button"
                 />

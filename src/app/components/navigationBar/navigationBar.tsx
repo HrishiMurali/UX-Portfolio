@@ -8,10 +8,7 @@ import "./navigationBar.css";
 
 const NavigationBar = () => {
   const router = useRouter();
-  const navigationList = [
-    { label: "Home", route: "/home" },
-    { label: "Works", route: "/works" },
-  ];
+  const navigationList = [{ label: "Home", route: "/home" }];
 
   return (
     <div className="nav-container">
@@ -35,6 +32,24 @@ const NavigationBar = () => {
             {label}
           </div>
         ))}
+        <a
+          href="/work.pdf"
+          key={"Works"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-item"
+        >
+          {"Works"}
+        </a>
+        <a
+          href="/resume.pdf"
+          key={"resume"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-item"
+        >
+          {"Resume"}
+        </a>
       </div>
     </div>
   );

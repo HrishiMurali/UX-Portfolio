@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { gsap } from "gsap";
 import NavigationBar from "../components/navigationBar/navigationBar";
 import { AnimationProvider, useAnimation } from "./animationContext";
+import { usePathname } from "next/navigation";
 
 function RootContent({ children }: { children: React.ReactNode }) {
   const [isLoading, setIsLoading] = useState(true);
@@ -37,6 +38,7 @@ function RootContent({ children }: { children: React.ReactNode }) {
       timeline.kill();
     }; // Cleanup
   }, [shouldShowAnimation, toggleAnimation]);
+  const pathname = usePathname();
 
   return (
     <>
@@ -50,9 +52,11 @@ function RootContent({ children }: { children: React.ReactNode }) {
           </span>
         </div>
       ) : null}
-      <div className={"navigation-bar"}>
-        <NavigationBar />
-      </div>
+      {pathname === "/home" && (
+        <div className={"navigation-bar"}>
+          <NavigationBar />
+        </div>
+      )}
       <div className="nav-children">{!isLoading && children}</div>
       <div className="footer flex flex-row justify-between p-[25px] md:p-10 bg-[#0D0D0D] mt-5 rounded-[40px]">
         <div className="hidden md:block">Hrishi Murali K</div>

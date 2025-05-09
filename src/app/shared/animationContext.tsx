@@ -19,7 +19,8 @@ interface AnimationProviderProps {
 export const AnimationProvider: React.FC<AnimationProviderProps> = ({
   children,
 }) => {
-  const [shouldShowAnimation, setShouldShowAnimation] = useState<boolean>(true);
+  const [shouldShowAnimation, setShouldShowAnimation] =
+    useState<boolean>(false);
 
   const toggleAnimation = () => {
     setShouldShowAnimation((prev) => !prev);

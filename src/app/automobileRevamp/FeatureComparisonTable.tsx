@@ -1,4 +1,14 @@
 import React from "react";
+import BMW from "../../../public/BMW.png";
+import benz from "../../../public/benz.png";
+import tesla from "../../../public/tesla.png";
+import nissan from "../../../public/nissan.png";
+import correct from "../../../public/correct.png";
+import wrong from "../../../public/wrong.png";
+import androidApple from "../../../public/androidApple.png";
+import Image from "next/image";
+
+import "./featureComparisonTable.css";
 
 interface FeatureRow {
   feature: string;
@@ -64,28 +74,38 @@ const FeatureComparisonTable: React.FC = () => {
   return (
     <table>
       <thead>
-        <tr>
-          <th>Feature</th>
-          {/* <th><img src="/path/to/bmw-logo.png" alt="BMW" /></th>
-          <th><img src="/path/to/tesla-logo.png" alt="Tesla" /></th>
-          <th><img src="/path/to/mercedes-logo.png" alt="Mercedes" /></th>
-          <th><img src="/path/to/nissan-logo.png" alt="Nissan" /></th> */}
+        <tr className="table-row">
+          <th className="table-header">
+            <span className="table-header-text">Benchmark</span>
+          </th>
+          <th className="table-header-image ">
+            <Image src={BMW} alt="BMW" />
+          </th>
+          <th className="table-header-image ">
+            <Image src={tesla} alt="Tesla" />
+          </th>
+          <th className="table-header-image ">
+            <Image src={benz} alt="Mercedes" />
+          </th>
+          <th className="table-header-image ">
+            <Image src={nissan} alt="Nissan" />
+          </th>
         </tr>
       </thead>
       <tbody>
         {data.map((row, index) => (
           <tr key={index}>
-            <td>{row.feature}</td>
+            <td className="table-header">
+              {" "}
+              <span className="table-header-text">{row.feature}</span>
+            </td>
             {[row.bmw, row.tesla, row.mercedes, row.nissan].map(
               (value, idx) => (
-                <td key={idx}>
-                  {value === true && <span>✅</span>}
-                  {value === false && <span>❌</span>}
+                <td key={idx} className="table-data">
+                  {value === true && <Image src={correct} alt="correct" />}
+                  {value === false && <Image src={wrong} alt="wrong" />}
                   {value === "platform" && (
-                    <>
-                      {/* <img src="/path/to/android-icon.png" alt="Android" />
-                    <img src="/path/to/ios-icon.png" alt="iOS" /> */}
-                    </>
+                    <Image src={androidApple} alt="androidApple" />
                   )}
                 </td>
               )

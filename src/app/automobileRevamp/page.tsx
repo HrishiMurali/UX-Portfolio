@@ -5,20 +5,27 @@ import icon4 from "../../../public/Frame 25.png";
 import icon6 from "../../../public/Frame 23.png";
 import icon7 from "../../../public/Frame 22.png";
 import phones from "../../../public/Frame 13.png";
-
+import userPersona from "../../../public/userPersona.png";
+import remVampCar from "../../../public/revampCar.png";
+import darkPhone from "../../../public/darkPhone.png";
+import issueCar from "../../../public/issueCar.png";
+import wireframe from "../../../public/wireframe.png";
+import design from "../../../public/design.png";
+import designIteration from "../../../public/designIteration.png";
+import infoArc from "../../../public/infoArc.png";
+import keyProblemCarRevamp from "../../../public/keyProblemCarRevamp.png";
+import cars3 from "../../../public/3cars.png";
+import sticky from "../../../public/stickyNotes.png";
 import SummaryCard from "../components/summaryCard/SummaryCard";
 import Card from "../components/card/card";
 import FeatureComparisonTable from "./FeatureComparisonTable";
+import "./styles.css";
+import { constants } from "@/app/shared/constants";
+import StatusCard from "./statusCard";
 
 const StandardAutomobileAppRevamp = () => {
   const iconList = [icon1, icon4, icon6, icon7];
-  const issues = [
-    "Onboarding was not very smooth",
-    "Inconsistency between different OS",
-    "Inconsistency throughout the design",
-    "User experience was not great",
-    "Error messages were not clear and inconsistent",
-  ];
+
   const heuristics = [
     { count: "016", text: "Visibility of System Status" },
     { count: "009", text: "Error Prevention" },
@@ -170,163 +177,309 @@ const StandardAutomobileAppRevamp = () => {
   ];
 
   return (
-    <div>
+    <div className="revamp-head-page">
       <div className="revamp-head-image-section">
-        <Image className="work-1-img" alt="phones" src={phones} />
-        <div>
+        <div className="revamp-head-icons">
           {iconList.map((icon, index) => (
-            <Image src={icon} alt="experience" key={index} />
+            <Image
+              src={icon}
+              alt="revamp-icons"
+              className="revamp-icons"
+              key={index}
+            />
           ))}
         </div>
+        <Image
+          className="revamp-head-car-image"
+          alt="remVampCar"
+          src={remVampCar}
+        />
       </div>
       <div className="revamp-head-main-title-section">
         <SummaryCard
-          title={"Standard Automobile App Revamp"}
-          content={
-            "Role – UX Designer, UX researcher, Interaction design, and 3D designer"
-          }
-          containerStyle=""
-          titleStyle=""
-          contentStyle=""
-          buttonStyle=""
+          title={constants.standardAutomobile}
+          content={constants.carRevampTitleTag}
+          containerStyle="revamp-page-heading-container"
+          titleStyle="revamp-page-heading-title"
+          contentStyle="revamp-page-heading-content"
         />
       </div>
-      <div className="revamp-head-main-phone and content-section">
-        <Image className="work-1-img" alt="phones" src={phones} />
-        {issues.map((issue, index) => (
-          <Card
-            key={index}
-            text={issue}
-            textStyle="work-1-text"
-            style="work-1-card"
+      <div className="revamp-head-main-phone-content-section">
+        <div className="revamp-phone-wrapper">
+          <Image className="revamp-phone" alt="phones" src={darkPhone} />
+        </div>
+        <Card
+          text={constants.comprehensive}
+          textStyle="revamp-phone-description-text"
+          style="revamp-phone-description"
+        />
+      </div>
+      <div className="car-revamp-key-problem">
+        <div className="car-revamp-text-wrapper-container">
+          {constants.carRevampIssues.map((issue, index) => (
+            <Card
+              key={index}
+              text={issue}
+              textStyle="car-revamp-text"
+              style="car-revamp-text-wrapper"
+            />
+          ))}
+        </div>
+
+        <div className="car-revamp-image-text-wrapper">
+          <span className="car-revamp-key-problem-text">
+            {constants.keyProblem}
+          </span>
+          <Image
+            className="work-1-img"
+            alt="phones"
+            src={keyProblemCarRevamp}
           />
-        ))}
-        <div>
-          <span>Key Problems</span>
-          <Image className="work-1-img" alt="phones" src={phones} />
         </div>
       </div>
 
       <div className="revamp-heuristic-evaluation">
         <Card
-          text={"Heuristic Evaluation"}
-          textStyle="work-1-text"
-          style="work-1-card"
+          text={constants.heuristicEvaluation}
+          textStyle="revamp-heuristic-evaluation-text"
+          style="revamp-heuristic-evaluation-wrapper"
         />
-      </div>
-      <div className="revamp-heuristic-image-content">
-        <Image className="work-1-img" alt="phones" src={phones} />
-        <Card
-          text={
-            "Conducted the Heuristic Evaluation of the Application for the UAE. Heuristic evaluations allow us to analyze the usability and functionality of the application in a standardized way. The application was evaluated and ranked according to Jakob Nielsen’s ten heuristics, the 7 classic UX laws and severity rating scale of 0-4. we prioritized our findings by severity and developed a series of findings. By addressing usability issues and providing recommendations, We hope to improve the Application’s usability."
-          }
-          textStyle="work-1-text"
-          style="work-1-card"
-        />
-      </div>
-      <div className="revamp-heuristic-counts">
-        {heuristics.map(({ count, text }, index) => (
-          <div key={index}>
-            <div>
-              <span>{count}</span>
-              <span>{text}</span>
-            </div>
+
+        <div className="revamp-heuristic-image-content-section">
+          <div className="revamp-heuristic-image-wrapper">
+            <Image className="revamp-heuristic-image" alt="cars" src={cars3} />
           </div>
-        ))}
-      </div>
-      <div className="revamp-severity-report">
-        <Card text={"Severity Report"} textStyle="" style="" />
-        <div>
-          <span>235+ Total Issues</span>
-          <Image className="work-1-img" alt="phones" src={phones} />
-        </div>
-        <div>
-          {severity.map(({ count, text }, index) => (
-            <div key={index}>
-              <div>
-                <span>{count}</span>
-                <span>{text}</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div>
-        <Card text={"S4 Usability Catastrophe"} textStyle="" style="" />
-        {s4Issues.map(({ title, content }, index) => (
-          <SummaryCard
-            key={index}
-            title={title}
-            content={content}
-            containerStyle=""
-            titleStyle=""
-            contentStyle=""
-            buttonStyle=""
+
+          <Card
+            text={constants.heuristicDescription}
+            textStyle="revamp-heuristic-description"
+            style="revamp-heuristic-wrapper"
           />
-        ))}
-      </div>
-      <div className="competitorAnalysis">
-        competitorAnalysis
-        <FeatureComparisonTable />
-      </div>
-      <div className="userPersona">
-        User Persona
-        <Image className="work-1-img" alt="phones" src={phones} />
+        </div>
+
+        <div className=" revamp-heuristic-counts-main-wrapper">
+          <div className="flex flex-col gap-4">
+            {heuristics.slice(0, 5).map(({ count, text }, index) => (
+              <StatusCard
+                key={index}
+                count={count}
+                content={text}
+                containerClassName="revamp-heuristic-count-container"
+                countContainerClassName="revamp-heuristic-count-wrapper"
+                countTextClassName="revamp-heuristic-count"
+                contentContainerClassName="revamp-heuristic-count-text-wrapper"
+                contentTextClassName="revamp-heuristic-count-text"
+              />
+            ))}
+          </div>
+          <div className="flex flex-col gap-4">
+            {heuristics.slice(5).map(({ count, text }, index) => (
+              <StatusCard
+                key={index + 5}
+                count={count}
+                content={text}
+                containerClassName="revamp-heuristic-count-container"
+                countContainerClassName="revamp-heuristic-count-wrapper"
+                countTextClassName="revamp-heuristic-count"
+                contentContainerClassName="revamp-heuristic-count-text-wrapper"
+                contentTextClassName="revamp-heuristic-count-text"
+              />
+            ))}
+          </div>
+        </div>
       </div>
 
-      <div className="swotAnalysis">
-        SWOT Analysis
-        {swotAnalysis.map(({ title, content }, index) => (
-          <div key={index}>
-            <span>
-              <h2>{title}</h2>
+      <div className="revamp-severity-report">
+        <Card
+          text={constants.severityReport}
+          textStyle="revamp-heuristic-evaluation-text"
+          style="revamp-heuristic-evaluation-wrapper"
+        />
+        <div className="car-revamp-severity-issue-image-list">
+          <div className="revamp-severity-image-text-wrapper">
+            <span className="car-revamp-key-problem-text">
+              {constants.issue235}
             </span>
-            <ul>
-              {content.map((text, i) => (
-                <li key={i}>{text}</li>
-              ))}
-            </ul>
+            <Image className="" alt="issueCar" src={issueCar} />
           </div>
-        ))}
+          <div className="revamp-severity-issue-list">
+            {severity.map(({ count, text }, index) => (
+              <StatusCard
+                key={index}
+                count={count}
+                content={text}
+                containerClassName="revamp-heuristic-count-container"
+                countContainerClassName="revamp-heuristic-count-wrapper"
+                countTextClassName="revamp-heuristic-count"
+                contentContainerClassName="revamp-heuristic-count-text-wrapper"
+                contentTextClassName="revamp-heuristic-count-text"
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="revamp-usability-section">
+        <Card
+          text={constants.s4usability}
+          textStyle="revamp-heuristic-evaluation-text"
+          style="revamp-heuristic-evaluation-wrapper"
+        />
+
+        <div className="flex justify-center gap-12">
+          <div className="flex flex-col gap-4 flex-1">
+            {s4Issues.slice(0, 3).map(({ title, content }, index) => (
+              <SummaryCard
+                key={index}
+                title={title}
+                content={content}
+                containerStyle="revamp-usability-issue-wrapper"
+                titleStyle="revamp-usability-usability-text-container"
+                contentStyle="revamp-usability-count-text"
+              />
+            ))}
+          </div>
+          <div className="flex flex-col gap-4 flex-1">
+            {s4Issues.slice(3).map(({ title, content }, index) => (
+              <SummaryCard
+                key={index + 3}
+                title={title}
+                content={content}
+                containerStyle="revamp-usability-issue-wrapper "
+                titleStyle="revamp-usability-usability-text-container"
+                contentStyle="revamp-usability-count-text"
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="revamp-competitor-analysis">
+        <Card
+          text={constants.competitorAnalysis}
+          textStyle="revamp-heuristic-evaluation-text"
+          style="revamp-heuristic-evaluation-wrapper"
+        />
+
+        <FeatureComparisonTable />
+      </div>
+      <div className="revamp-user-persona">
+        <Card
+          text={constants.UserPersona}
+          textStyle="revamp-heuristic-evaluation-text"
+          style="revamp-heuristic-evaluation-wrapper"
+        />
+
+        <Image className="work-1-img" alt="userPersona" src={userPersona} />
+      </div>
+
+      <div className="revamp-swot-analysis">
+        <Card
+          text={constants.SWOTAnalysis}
+          textStyle="revamp-heuristic-evaluation-text"
+          style="revamp-heuristic-evaluation-wrapper"
+        />
+        {
+          <div className="revamp-swot-list-item-wrapper">
+            {swotAnalysis.map(({ title, content }, index) => (
+              <div key={index} className="revamp-swot-list-items">
+                <span className="revamp-swot-list-head">{title}</span>
+                <div className="revamp-swot-list-points">
+                  <ul className="revamp-swot-list-text-list">
+                    {content.map((text, i) => (
+                      <li key={i}>{text}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+        }
+      </div>
+      <div className="revamp-understand">
+        <Card
+          text={constants.understand}
+          textStyle="revamp-heuristic-evaluation-text"
+          style="revamp-heuristic-evaluation-wrapper"
+        />
+        <div className="revamp-understand-text-image">
+          <div className="revamp-understand-head">
+            <h2 className="revamp-understand-head-text">{constants.score}</h2>
+            {evaluationCriteria.map(({ title, text }, index) => (
+              <div key={index}>
+                <div className="flex items-start gap-3">
+                  <span className="text-[82px] leading-none  mt-[-23px] text-[#C7C7BB]">
+                    &#8226;
+                  </span>
+                  <div>
+                    <span className="revamp-understand-sub block">{title}</span>
+                    <p className="revamp-understand-sub-text mt-1">{text}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="stick-image">
+            <Image className="work-1-img" alt="phones" src={sticky} />
+          </div>
+        </div>
+      </div>
+      <div className="how-might-we-main-wrapper">
+        <Card
+          text={constants.howMight}
+          textStyle="revamp-heuristic-evaluation-text"
+          style="revamp-heuristic-evaluation-wrapper"
+        />
+
+        <div className="revamp-how-might-list-wrapper flex justify-center gap-6">
+          <div className="w-1/2 flex flex-col gap-3">
+            {howMight.slice(0, 3).map((text, index) => (
+              <div key={index} className="revamp-how-might-wrapper">
+                <p className="revamp-how-might-text">{text}</p>
+              </div>
+            ))}
+          </div>
+          <div className="w-1/2 flex flex-col gap-3">
+            {howMight.slice(3).map((text, index) => (
+              <div key={index + 3} className="revamp-how-might-wrapper">
+                <p className="revamp-how-might-text">{text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="revamp-information-architecture">
+        <Card
+          text={constants.informationArchitecture}
+          textStyle="revamp-heuristic-evaluation-text"
+          style="revamp-heuristic-evaluation-wrapper"
+        />
+        <Image alt="infoArc" src={infoArc} />
+      </div>
+      <div className="revamp-information-architecture">
+        <Card
+          text={constants.wireframe}
+          textStyle="revamp-wire-text"
+          style="revamp-wire-wrapper"
+        />
+        <Image alt="wireframe" src={wireframe} />
+      </div>
+
+      <div>
+        <Card
+          text={constants.designIterations}
+          textStyle="revamp-wire-text"
+          style="revamp-wire-wrapper"
+        />
+        <Image className="work-1-img" alt="phones" src={designIteration} />
       </div>
       <div>
         <Card
-          text={"Understanding the customers needs and problems"}
-          textStyle=""
-          style=""
+          text={constants.designs}
+          textStyle="revamp-wire-text"
+          style="revamp-wire-wrapper"
         />
-        <span>Scoring Done Against</span>
-        {evaluationCriteria.map(({ title, text }, index) => (
-          <div key={index}>
-            <span>{title}</span>
-            <p>{text}</p>
-          </div>
-        ))}
-        <Image className="work-1-img" alt="phones" src={phones} />
-      </div>
-      <div>
-        <Card text={"How Might We"} textStyle="" style="" />
-        {howMight.map((text, index) => (
-          <div key={index}>
-            <span>{text}</span>
-          </div>
-        ))}
-      </div>
-      <div>
-        <Card text={"Information Architecture"} textStyle="" style="" />
-        <Image className="work-1-img" alt="phones" src={phones} />
-      </div>
-      <div>
-        <Card text={"Wireframe"} textStyle="" style="" />
-        <Image className="work-1-img" alt="phones" src={phones} />
-      </div>
-      <div>
-        <Card text={"Design Iterations"} textStyle="" style="" />
-        <Image className="work-1-img" alt="phones" src={phones} />
-      </div>
-      <div>
-        <Card text={"Designs"} textStyle="" style="" />
-        <Image className="work-1-img" alt="phones" src={phones} />
+        <Image className="work-1-img" alt="phones" src={design} />
       </div>
       <div>
         {" "}

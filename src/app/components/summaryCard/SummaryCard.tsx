@@ -8,8 +8,9 @@ interface SummaryCardProps {
   containerStyle: string;
   titleStyle: string;
   contentStyle: string;
-  buttonStyle?: string;
+  buttonStyle?: string; // optional
 }
+
 const SummaryCard = ({
   title,
   content,
@@ -28,15 +29,18 @@ const SummaryCard = ({
         </div>
         <p className={`${contentStyle}`}>{content}</p>
       </div>
-      <div
-        className={`flex flex-row justify-between items-center w-[230px] h-[64px] text-[32px] border-4 border-[#C7C7BB] p-4 rounded-[40px] ${buttonStyle}`}
-      >
-        <button className="h-[64px] w-[230px]">Details</button>
 
-        <span className="rotate-90">
-          <Arrow />
-        </span>
-      </div>
+      {/* Conditionally render the button only if buttonStyle is provided */}
+      {buttonStyle && (
+        <div
+          className={`flex flex-row justify-between items-center w-[230px] h-[64px] text-[32px] border-4 border-[#C7C7BB] p-4 rounded-[40px] ${buttonStyle}`}
+        >
+          <button className="h-[64px] w-[230px]">Details</button>
+          <span className="rotate-90">
+            <Arrow />
+          </span>
+        </div>
+      )}
     </div>
   );
 };

@@ -1,0 +1,19 @@
+.table-header {
+  @apply bg-[#0D0D0D] h-[114px] flex items-center rounded-[40px] p-[20px] w-[430px];
+}
+
+.table-header-text {
+  @apply text-[#C7C7BB] font-normal  text-[24px] ml-[30px];
+}
+
+.table-row {
+  @apply m-[16px];
+}
+
+.table-data {
+  @apply p-[20px];
+}
+
+.table-header-image {
+  @apply p-[20px];
+}

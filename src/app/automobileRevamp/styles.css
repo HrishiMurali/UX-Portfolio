@@ -1,0 +1,223 @@
+.revamp-head-page {
+  @apply flex flex-col gap-4;
+}
+
+.revamp-head-image-section {
+  @apply flex flex-row justify-between h-[440px] bg-[#0D0D0D];
+}
+.revamp-head-car-image {
+  @apply w-[660px] h-[440px];
+}
+
+.revamp-head-image-section {
+  @apply flex flex-row justify-between;
+}
+.revamp-head-icons {
+  @apply flex flex-row items-end h-full;
+}
+.revamp-icons {
+  @apply h-[103px] w-[103px];
+}
+.revamp-page-heading-container {
+  @apply h-[245px] p-[5px] bg-[#C7C7BB] rounded-[40px];
+}
+.revamp-page-heading-title {
+  @apply text-[68px] !text-black font-extrabold mt-[25px] ml-[30px];
+  color: #0d0d0d !important;
+}
+.revamp-page-heading-content {
+  @apply text-[28px] !text-black mt-[2px] ml-[30px];
+  color: #0d0d0d !important;
+}
+.revamp-phone {
+  @apply w-[650px] h-[541px];
+}
+.revamp-head-main-phone-content-section {
+  @apply flex flex-row gap-4;
+}
+.revamp-phone-description {
+  @apply p-[50px]  flex flex-[55%] justify-center items-center bg-[#0D0D0D] rounded-[40px];
+}
+.revamp-phone-wrapper {
+  @apply flex flex-[45%];
+}
+.revamp-phone-description-text {
+  @apply text-[#C7C7BB] text-[28px];
+}
+.car-revamp-text {
+  @apply text-[#C7C7BB] text-[28px] ml-[30px];
+}
+.car-revamp-text-wrapper {
+  @apply flex text-[#C7C7BB] text-[28px] h-[114px] bg-[#0D0D0D] rounded-[40px] items-center;
+}
+.car-revamp-key-problem {
+  @apply flex flex-row gap-4;
+}
+.car-revamp-image-text-wrapper {
+  @apply flex flex-col bg-[#0D0D0D] rounded-[40px];
+}
+.car-revamp-key-problem-text {
+  @apply text-[#C7C7BB] text-[28px] mt-[30px] ml-[30px];
+}
+.car-revamp-text-wrapper-container {
+  @apply flex flex-col gap-4;
+}
+.revamp-heuristic-evaluation {
+  @apply flex flex-col gap-3;
+}
+.revamp-heuristic-evaluation-text {
+  @apply text-[#0D0D0D] text-[28px] ml-[30px];
+}
+.revamp-heuristic-evaluation-wrapper {
+  @apply bg-[#C7C7BB] h-[100px] flex items-center rounded-[40px] font-extrabold;
+}
+
+.revamp-heuristic-image-content-section {
+  @apply flex flex-row gap-4 h-[630px] bg-[#0D0D0D]; /* ✅ Set a fixed height */
+}
+
+.revamp-heuristic-image-wrapper,
+.revamp-heuristic-wrapper {
+  @apply h-full;
+}
+
+.revamp-heuristic-wrapper {
+  @apply flex flex-1 flex-col  bg-[#0D0D0D] rounded-tr-[40px] rounded-br-[40px];
+}
+
+.revamp-heuristic-image-wrapper {
+  @apply flex-1 relative; /* ✅ relative required for next/image fill */
+}
+
+.revamp-heuristic-description {
+  @apply text-[#C7C7BB] text-[28px] ml-[30px] p-[20px] bg-[#0D0D0D];
+}
+.revamp-heuristic-counts-main-wrapper {
+  @apply flex  justify-center gap-12;
+}
+.revamp-heuristic-image {
+  @apply object-cover w-full h-full rounded-tl-[40px] rounded-bl-[40px]; /* ✅ stretch the image */
+}
+
+.revamp-heuristic-count {
+  @apply text-[#C7C7BB] text-[40px] font-semibold;
+}
+
+.revamp-heuristic-count-text {
+  @apply text-[#C7C7BB] text-[24px];
+}
+
+.revamp-heuristic-count-container {
+  @apply bg-[#0D0D0D] h-[100px] flex items-center rounded-[40px] font-extrabold;
+}
+
+.revamp-heuristic-count-text-wrapper {
+  @apply ml-[30px];
+}
+
+.revamp-heuristic-count-wrapper {
+  @apply ml-[30px];
+}
+.car-revamp-severity-issue-image-list {
+  @apply flex flex-row w-full gap-4;
+}
+
+.revamp-severity-report {
+  @apply flex flex-col gap-3;
+}
+
+.revamp-severity-issue-list {
+  @apply flex flex-[60%] flex-col gap-3 w-full;
+}
+
+.revamp-severity-image-text-wrapper {
+  @apply flex flex-[40%] flex-col bg-[#0D0D0D] rounded-[40px];
+}
+
+.revamp-usability-issue-wrapper {
+  @apply flex flex-1 flex-col  bg-[#0D0D0D]  rounded-[40px] h-[367px];
+}
+
+.revamp-usability-usability-text-container {
+  @apply text-[#C7C7BB] text-[40px] font-semibold leading-none h-[90px];
+}
+
+.revamp-usability-count-text {
+  @apply text-[#C7C7BB] text-[24px] h-[132px];
+}
+
+.revamp-competitor-analysis {
+  @apply flex flex-col gap-4;
+}
+
+.revamp-user-persona {
+  @apply flex flex-col gap-4;
+}
+.revamp-swot-analysis {
+  @apply flex flex-col gap-4;
+}
+.revamp-swot-list-item-wrapper {
+  @apply flex flex-wrap justify-center gap-6;
+}
+.revamp-swot-list-items {
+  @apply w-full h-[500px] md:w-[calc(50%-0.75rem)] bg-[#0f0f0f] rounded-md p-5 flex flex-col justify-start rounded-[40px];
+}
+
+.revamp-swot-list-text-list {
+  @apply text-[32px] list-disc list-inside space-y-1   leading-snug text-[#C7C7BB];
+}
+
+.revamp-swot-list-head {
+  @apply h-[45px] text-[#C7C7BB] text-[40px]  font-semibold mb-[70px];
+}
+.revamp-swot-list-points {
+  @apply h-[264px];
+}
+
+.revamp-understand {
+  @apply flex flex-col gap-4;
+}
+.revamp-understand-head {
+  @apply flex-1 bg-[#0D0D0D] text-[#C7C7BB] p-6 rounded-[40px] space-y-4;
+}
+.revamp-understand-head-text {
+  @apply text-[40px];
+}
+.revamp-understand-sub {
+  @apply text-[32px] font-semibold;
+}
+.revamp-understand-sub-text {
+  @apply text-[px]  text-[32px] text-[#C7C7BB];
+}
+.revamp-understand-text-image {
+  @apply flex flex-row gap-3;
+}
+.stick-image {
+  @apply flex flex-1;
+}
+
+.revamp-how-might-list-wrapper {
+  @apply flex justify-center gap-6;
+}
+
+.revamp-how-might-wrapper {
+  @apply h-[320px] bg-[#0D0D0D] rounded-[40px];
+}
+
+.revamp-how-might-text {
+  @apply text-[32px] text-[#C7C7BB] mt-[60px] ml-[60px];
+}
+.how-might-we-main-wrapper {
+  @apply flex flex-col gap-3;
+}
+
+.revamp-information-architecture {
+  @apply flex flex-col gap-4;
+}
+
+.revamp-wire-text {
+  @apply text-[#C7C7BB] text-[28px] ml-[30px];
+}
+.revamp-wire-wrapper {
+  @apply bg-[#0D0D0D] h-[100px] flex items-center rounded-[40px] font-extrabold;
+}

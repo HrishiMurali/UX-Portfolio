@@ -23,4 +23,33 @@ export const constants = {
   usedCar: "Auto Marketplace",
   usedCarContent:
     "Website which focus on ease and efficiency of buying and selling used cars.",
+  carRevampTitleTag:
+    "Role – UX Designer, UX researcher, Interaction design, and 3D designer",
+  comprehensive:
+    "Comprehensive explanation of the reasoning and thought process behind these design decisions. By offering insights into the creative process, user-centered methodologies, and project goals, which helps the stakeholders and users gain a deeper understanding of the careful considerations that shape the final product.",
+  carRevampIssues: [
+    "Onboarding was not very smooth",
+    "Inconsistency between different OS",
+    "Inconsistency throughout the design",
+    "User experience was not great",
+    "Error messages were not clear and inconsistent",
+  ],
+  keyProblem: "Key Problems",
+  heuristicEvaluation: "Heuristic Evaluation",
+  heuristicDescription:
+    "Conducted the Heuristic Evaluation of the Application for the UAE. Heuristic evaluations allow us to analyze the usability and functionality of the application in a standardized way. The application was evaluated and ranked according to Jakob Nielsen’s ten heuristics, the 7 classic UX laws and severity rating scale of 0-4. we prioritized our findings by severity and developed a series of findings. By addressing usability issues and providing recommendations, We hope to improve the Application’s usability.",
+  severityReport: "Severity Report",
+  issue235: "235+ Total Issues",
+  s4usability: "S4 Usability Catastrophe",
+  competitorAnalysis: "Competitor Analysis",
+  UserPersona: "UserPersona",
+  SWOTAnalysis: "SWOT Analysis",
+  understand: "Understanding the customers needs and problems",
+  score: "Scoring Done Against",
+  howMight: "How Might We",
+  informationArchitecture: "Information Architecture",
+  wireframe: "Wireframe",
+  designIterations: "Design Iterations",
+  designs: "Designs",
 };
+
